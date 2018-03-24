@@ -1,0 +1,447 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoBoldItalic";
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    font: 17px RobotoRegular;
+    color: black;
+}
+ 
+li{
+    list-style: none;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.clear:after {
+    clear: both;
+}
+
+.to-left{
+    float: left;
+}
+ 
+.to-right{
+    float: right;
+} 
+
+ .container{
+     min-width: 320px;
+     max-width: 1360px;
+     margin: 0 auto;
+}
+
+
+/*
+.cols{
+    float: left;
+    margin: 0 0 1em;
+    padding: 0 1em;
+    text-align: center;
+}
+*/
+    
+/*    
+.col-1 {width: 8.333333333333333%;}
+.col-2 {width: 16.66666666666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333333333333%;}
+.col-5 {width: 41.66666666666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333333333333%;}
+.col-8 {width: 66.66666666666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333333333333%;}
+.col-11 {width: 91.66666666666666%;}
+.col-12 {width: 100%;}
+*/
+
+.col-1 {width: 6.98529411764706%;}
+.col-2 {width: 15.4411764705882%;}
+.col-3 {width: 23.8970588235294%;}
+.col-4 {width: 32.3529411764706%;}
+.col-5 {width: 40.8088235294118%;}
+.col-6 {width: 49.2647058823529%;}
+.col-7 {width: 57.7205882352941%;}
+.col-8 {width: 66.1764705882353%;}
+.col-9 {width: 74.6323529411765%;}
+.col-10 {width: 83.0882352941177%;}
+.col-11 {width: 91.5441176470588%;}
+.col-12 {width: 100%;}
+
+header{
+    .topline{
+        background: #696969;
+        height: 50px;
+
+        .nav__container{
+            .nav{
+                .nav__block{
+                    margin-top: 12px;
+                    width: 456px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .nav__block__item{
+                        display: block;
+
+                        a{
+                            color: #c2c2c2;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-family: "RobotoRegular";
+                            font-size: 12px;
+                        }
+
+                        &.active, &:hover{
+                            a{
+                                color: #ffffff;        
+
+                                &:after{
+                                    display: block;
+                                    margin: 15px -13px 0;
+                                    content:'';
+                                    background: #ffc925;
+                                    height: 3px;
+                                    width: auto;
+                                }                  
+                            }
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .entrance{
+                display: block;
+                background-color: #ff8900;
+                width: 125px;
+                height: 50px;
+
+                a{
+                    margin-top: 17px;
+                    margin-left: 37px;
+                    display: block;
+                    text-align: left;
+                    font-family: "MyriadProRegular";
+                    font-size: 12px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:before{
+                        margin-top: -1px;
+                        margin-right: 8px;
+                        content:url(../img/ico_entrance.png);
+                        display: block;
+                        float: left;
+                    }
+                }
+
+                &:hover{
+                    background-color: #ffc925;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .midline{
+        margin-top: 34px;
+
+        .toplogo{
+            margin-top: 6px;
+        }
+
+        .midline__block{
+            display: flex;
+            justify-content: space-between;
+
+            .contacts__basket{
+                justify-content: space-between;
+
+                .topcontacts{
+                    margin-top: 2px;
+                    height: 50px;
+                    background-color: #f5f5f5;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: "RobotoBoldItalic";
+                    color: #151515;
+                    font-size: 16px;
+                    white-space: nowrap;
+
+                    span.topcontacts__item{
+                        display: block;
+                        height: inherit;
+                        width: 167px;                        
+                        padding-top: 15px;
+                        margin-left: 13px;
+                    }
+
+                    button.topcontacts__button{
+                            margin-left: 17px;
+                            height: inherit;
+                            width: 197px;
+                            border: none;
+                            outline: none;                            
+                            background: #ff8900;
+                            margin-top: 0;
+                                
+                                span{
+                                    display: inline-block;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    font-family: "MyriadProRegular";
+                                    font-size: 12px;
+                                    color: #fff;
+                                    
+                                    &:before{
+                                        margin-right: 10px;
+                                        content: url(../img/ico_phone.png);
+                                        display: inline-block;
+                                        float: left;
+                                    }
+                                }
+
+                            &:hover{
+                                background: #ffc925;
+                                cursor: pointer;
+                            }
+                        }
+                }
+
+                .basketblock{
+                    height: 57px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .basketblock__item{
+                        width: 116px;
+                        display: block;
+                        position: relative;
+                        height: 64px;
+
+                        img.quantity{
+                            display: block;
+                            position: absolute;
+                            top: -27px;
+                            left: 8px;
+                        }
+
+                        img{
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: 0 auto;
+                        }
+
+                        span{
+                            display: block;
+                            color: #3d3d3d;
+                            font-family: "RobotoRegular";
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            margin: 42px auto 0;
+                        }
+
+                        &:nth-child(2){
+                            border-left: 1px solid #e4e4e4;
+                            border-right: 1px solid #e4e4e4;
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.top{
+    margin-top: 34px;
+
+    .menu{
+        .menu__title{
+            height: 56px;
+            background: #ffa900;
+            display: flex;
+
+            .burger{
+                position: relative;
+                height: inherit;
+                display: block;
+                width: 60px;
+                background: #db7200;
+
+                img{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 23px;
+                    margin:  0 auto;
+                }
+            }
+
+            .menu__title__text{
+                font-family: "RobotoBold";
+                font-size: 20px;
+                color: white;
+                padding: 16px 0 0 23px;
+            }
+        }
+
+        ul.menu__block{
+            margin-top: 8px;
+
+            li.menu__block__item{
+                padding-left: 38px;
+                padding-top: 18px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #f1f1f1;
+                position: relative;
+
+                a{
+                    display: inline-block;
+                    font-size: 16px;
+                    line-height: 1;
+                    color:#3b3b3b;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:after{
+                        content: url(../img/arrow.png);
+                        display: inline-block;
+                        padding-top: 2px;
+                        position: absolute;
+                        right: 36px;
+                        bottom: 16px;
+                    }
+                }
+
+                &:hover{
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+
+    .search__filter{
+        .search{
+            height: 56px;
+            background: #f5f5f5;
+
+            form.topsearch{
+                display:flex;
+                justify-content: space-between;
+
+                input[type="text"]{
+                    height: inherit;
+                    width: 700px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    font-family: 'RobotoRegular';
+                    font-size: 14px;
+                    color: #929292;
+                    padding-left: 27px;
+                }
+
+                .topsearch__select{
+                    width: 148px;
+                    height: 40px;
+                    padding: 7px;
+                    margin-top: 10px;
+                    border-left: 1px solid #dddddd;
+                    position: relative;
+
+                    select{
+                        width: 120px;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        font-size: 14px;
+                        color: #616161;
+                    }
+                }
+
+                button.topsearch__submit{
+                    border:none;
+                    outline: none;
+                    background: #ff8900;
+                    font-family: "RobotoBold";
+                    color: white;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    height: 56px;
+                    width: 166px;
+
+                    &:hover{
+                        background-color: #ffc925;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
+        margin: 0 10px;
+    }
+}
