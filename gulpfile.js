@@ -47,7 +47,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src('./src/*.js')
+  return gulp.src('./src/app.js')
     .pipe(bro({
       debug: isDevelopment,
       transform: [
@@ -88,6 +88,7 @@ gulp.task('misc', function () {
     .pipe(gulp.dest('./public'));
 });
 
+
 gulp.task('db', function () {
   return gulp.src('./src/db/**/*.json')
     .pipe(gulp.dest('./public/db'));
@@ -121,9 +122,10 @@ gulp.task('build', gulp.series(
   gulp.parallel(
     'views',
     'styles',
-    //'scripts',
+    'scripts',
     //'fonts',
-    'images'
+    'images',
+    'misc'
   )));
 
 gulp.task('default', gulp.series(
