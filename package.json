@@ -1,14 +1,14 @@
 {
-  "name": "start-site",
+  "name": "test-market",
   "version": "0.1.0",
-  "author": "Artem Verbat",
-  "homepage": "https://github.com/verbart/start-site#readme",
+  "author": "Leonid Zychkov",
+  "homepage": "https://github.com/leonziger/test-market#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/verbart/start-site.git"
+    "url": "git+https://github.com/leonziger/test-market.git"
   },
   "bugs": {
-    "url": "https://github.com/verbart/start-site/issues"
+    "url": "https://github.com/leonziger/test-market/issues"
   },
   "scripts": {
     "start": "gulp",
@@ -36,7 +36,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "gulp.spritesmith": "^6.5.1",
-    "vinyl-buffer": "^1.0.0"
+    "vinyl-buffer": "^1.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",

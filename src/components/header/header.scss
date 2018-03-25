@@ -1,0 +1,208 @@
+header{
+  .topline{
+    background: #696969;
+    height: 50px;
+
+    .nav__container{
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: space-between;
+
+      .nav{
+        width: 100%;
+
+        .nav__block{
+          margin-top: 12px;
+          width: 456px;
+          display: flex;
+          justify-content: space-between;
+
+          .nav__block__item{
+            display: block;
+
+            a{
+              color: #c2c2c2;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-family: "Roboto";
+              font-size: 12px;
+            }
+
+            &.active, &:hover{
+              a{
+                color: #ffffff;
+
+                &:after{
+                  display: block;
+                  margin: 15px -13px 0;
+                  content:'';
+                  background: #ffc925;
+                  height: 3px;
+                  width: auto;
+                }
+              }
+            }
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .entrance{
+        display: block;
+        background-color: #ff8900;
+        width: 125px;
+        height: 50px;
+
+        a{
+          margin-top: 17px;
+          margin-left: 37px;
+          display: block;
+          text-align: left;
+          font-family: "Roboto";
+          font-size: 12px;
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+
+          &:before{
+            margin-top: -1px;
+            margin-right: 8px;
+            content:url(/images/ico_entrance.png);
+            display: block;
+            float: left;
+          }
+        }
+
+        &:hover{
+          background-color: #ffc925;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .logoline{
+    margin-top: 34px;
+
+    .toplogo{
+      margin-top: 6px;
+    }
+
+    .logoline__block{
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .contacts__basket{
+        display: flex;
+        justify-content: space-between;
+
+        .topcontacts{
+          margin-top: 2px;
+          height: 50px;
+          background-color: #f5f5f5;
+          display: flex;
+          justify-content: space-between;
+          font-family: "Roboto";
+          font-weight: 700;
+          font-style: italic;
+          color: #151515;
+          font-size: 16px;
+          white-space: nowrap;
+
+          span.topcontacts__item{
+            display: block;
+            height: inherit;
+            width: 167px;
+            padding-top: 15px;
+            margin-left: 13px;
+          }
+
+          button.topcontacts__button{
+            margin-left: 17px;
+            height: inherit;
+            width: 197px;
+            border: none;
+            outline: none;
+            background: #ff8900;
+            margin-top: 0;
+
+            span{
+              display: inline-block;
+              text-align: center;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-family: "Roboto";
+              font-size: 12px;
+              color: #fff;
+
+              &:before{
+                margin-right: 10px;
+                content: url(/images/ico_phone.png);
+                display: inline-block;
+                float: left;
+              }
+            }
+
+            &:hover{
+              background: #ffc925;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .basketblock{
+          height: 57px;
+          display: flex;
+          justify-content: space-around;
+
+          .basketblock__item{
+            width: 116px;
+            display: block;
+            position: relative;
+            height: 64px;
+
+            img.quantity{
+              display: block;
+              position: absolute;
+              top: -27px;
+              left: 8px;
+            }
+
+            img{
+              display: block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: 0 auto;
+            }
+
+            span{
+              display: block;
+              color: #3d3d3d;
+              font-family: "Roboto";
+              font-size: 10px;
+              text-transform: uppercase;
+              text-align: center;
+              margin: 42px auto 0;
+            }
+
+            &:nth-child(2){
+              border-left: 1px solid #e4e4e4;
+              border-right: 1px solid #e4e4e4;
+            }
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

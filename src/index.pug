@@ -6,81 +6,8 @@ html
     link(rel='stylesheet', href='css/style.css')
     title Responsive Template
   body
-    header
-      .topline
-        .container
-          .row
-            .nav__container
-              .to-left.col-4.nav
-                ul.nav__block
-                  li.nav__block__item
-                    a(href='#') Главная
-                  li.nav__block__item.active
-                    a(href='#') О компании
-                  li.nav__block__item
-                    a(href='#') Ссылка 1
-                  li.nav__block__item
-                    a(href='#') Ссылка 2
-                  li.nav__block__item
-                    a(href='#') Ссылка 3
-              .to-right.col-2.entrance
-                a(href='#') Вход
-      .midline
-        .container
-          .row
-            .midline__block
-              .to-left.col-3.toplogo
-                a(href='/')
-                  img(src='img/logo_top.png', alt='Logo')
-              .to-right.col-9.contacts__basket
-                .to-left.topcontacts
-                  span.topcontacts__item +380 98 170 00 740
-                  span.topcontacts__item +380 98 170 00 740
-                  button.topcontacts__button
-                    span Перезвонить мне
-                ul.to-right.basketblock
-                  li.basketblock__item
-                    img(src='img/ico_compare.png', alt='')
-                    span Сравнение
-                  li.basketblock__item
-                    img(src='img/ico_favorite.png', alt='')
-                    span Избранное
-                  li.basketblock__item
-                    img.quantity(src='img/ico_basket_quantity.png', alt='')
-                    img(src='img/ico_basket.png', alt='')
-                    span Корзина
-    .top
-      .container
-        .row
-          .to-left.col-3.menu
-            .menu__title
-              .burger
-                img(src='img/burger.png', alt='')
-              .menu__title__text Меню
-            ul.menu__block
-              li.menu__block__item
-                a(href='#') Ссылка 1
-              li.menu__block__item
-                a(href='#') Ссылка 2
-              li.menu__block__item
-                a(href='#') Ссылка 3
-              li.menu__block__item
-                a(href='#') Ссылка 4
-              li.menu__block__item
-                a(href='#') Ссылка 5
-              li.menu__block__item
-                a(href='#') Ссылка 6
-              li.menu__block__item
-                a(href='#') Ссылка 7
-          .to-right.col-9.search__filter
-            .search
-              form.topsearch(action='#')
-                input(type='text', placeholder='Поиск по сайту')
-                .topsearch__select
-                  select
-                    option Все категории
-                    option Какие-то категории
-                button.topsearch__submit Поиск
-            .filter
-    script(src='js/jquery-1.7.2.min.js')
-    script(src='js/pixel_screen.js')
+    include components/header/header
+    include components/top/top
+    script(src='assets/scripts/jquery-1.7.2.min.js')
+    script(src='assets/scripts/jselector.js')
+    script(src='assets/scripts/scripts.js')
