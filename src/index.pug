@@ -3,14 +3,19 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
     link(rel='stylesheet', href='css/style.css')
-    //script(defer src='js/bundle.js')
+    //script(defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    //script(defer src='https://cdn.jsdelivr.net/npm/jquery-pixel-perfect@1.0.0/lib/jquery-pixel-perfect.min.js')
+    script(defer src='js/bundle.js')
+
     title Responsive Template
   body
     include components/header/header
     include components/top/top
+    include components/main/main
+    include components/footer/footer
     script(src='jquery-1.7.2.min.js')
     script(src='pixelscreen.js')
     script(src='jselector.js')
     script(src='scripts.js')
-
