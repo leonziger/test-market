@@ -6,32 +6,10 @@ footer{
     border-bottom: 1px solid #7a7a7a;
 
     .subscribe{
-      .bottomtitle{
-        font-weight: 500;
-        font-size: 20px;
-        color: #cbcbcb;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #7a7a7a;
-
-        span{
-          display: inline-block;
-          position: relative;
-
-          &:after{
-            position: absolute;
-            top: 34px;
-            display: block;
-            content: '';
-            height: 1px;
-            width: 100%;
-            background: #ff8500;
-          }
-        }
-      }
 
       p.newsstyle{
         line-height: 23px;
-        margin-top: 28px;
+        margin-top: 29px;
         margin-bottom: 9px;
         font-weight: 700;
         font-size: 20px;
@@ -45,7 +23,11 @@ footer{
         font-weight: 900;
         color: #fff;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
+      }
+
+      p{
+        margin: 0;
       }
 
       form.subscribeform{
@@ -77,6 +59,112 @@ footer{
           &:hover{
             background-color: #ffc925;
             cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .bottommenu{
+      .bottommenu__links{
+        ul.bottommenu__links__list{
+          margin-top: 26px;
+
+          li.bottommenu__links__list__item{
+            margin-bottom: 15px;
+
+            a{
+              font-size: 14px;
+              color: #fff;
+
+              &:hover{
+                color: #ffc925;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .bottomlogo__socialmedia{
+    .bottomlogo{
+      margin-bottom: 16px;
+      margin-top: 31px;
+
+      a{
+        display: block;
+        padding-right: 23px;
+      }
+    }
+
+    span.copy{
+      font-size: 12px;
+      color: #a0a9b2;
+      display: block;
+      border-left: 1px solid #7a7a7a;
+      padding: 11px 15px;
+    }
+
+    .socialmedia__wezom{
+      ul.socialmedia__list{
+        margin-top: 27px;
+
+        li{
+
+          a{
+            display: block;
+            width: 49px;
+            height: 49px;
+            border: 1px solid #7b8092;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            line-height: 49px;
+            margin-right: 10px;
+
+            &:hover{
+              color: #ffc925;
+              border: 1px solid #ffc925;
+            }
+          }
+        }
+      }
+
+      .wezom{
+        margin-top: 23px;
+
+        .logo_w{
+          margin-top: 22px;
+          display: block;
+          margin-right: 19px;
+
+          img{
+            margin: 0 auto;
+            display: block;
+            width: 42px;
+            height: 15px;
+          }
+        }
+
+        .test{
+          height: 49px;
+          padding-left: 19px;
+          display: block;
+          border-left: 1px solid #7a7a7a;
+
+          span.white{
+            font-size: 12px;
+            display: block;
+            color: #fff;
+          }
+
+          span.gray{
+            padding-top: 10px;
+            white-space: nowrap;
+            font-size: 12px;
+            display: block;
+            color: #a0a9b2;
           }
         }
       }

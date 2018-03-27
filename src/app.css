@@ -1519,9 +1519,9 @@ header .topline {
       background-color: #ffc925;
       cursor: pointer; }
 header .logoline {
-  margin-top: 34px; }
+  margin-top: 37px; }
   header .logoline .toplogo {
-    margin-top: 6px; }
+    margin-top: 4px; }
   header .logoline .topcontacts {
     height: 50px;
     background-color: #f5f5f5;
@@ -1597,7 +1597,7 @@ header .logoline {
         cursor: pointer; }
 
 .top {
-  margin-top: 34px; }
+  margin-top: 31px; }
   .top .menu {
     padding-right: 0; }
     .top .menu .menu__header {
@@ -1703,9 +1703,9 @@ header .logoline {
             .top .search__filter .search form.topsearch .topsearch__select .jselector.is-shown .dropdown ul li {
               padding: 4px 10px; }
               .top .search__filter .search form.topsearch .topsearch__select .jselector.is-shown .dropdown ul li.selected {
-                background: #eee; }
+                background: #d2dae0; }
               .top .search__filter .search form.topsearch .topsearch__select .jselector.is-shown .dropdown ul li:hover {
-                background: #d2dae0;
+                background: #ccc;
                 cursor: pointer; }
       .top .search__filter .search form.topsearch button.topsearch__submit {
         border: none;
@@ -1733,26 +1733,9 @@ footer {
   footer .subscribe__bottommenu {
     padding-top: 31px;
     border-bottom: 1px solid #7a7a7a; }
-    footer .subscribe__bottommenu .subscribe .bottomtitle {
-      font-weight: 500;
-      font-size: 20px;
-      color: #cbcbcb;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #7a7a7a; }
-      footer .subscribe__bottommenu .subscribe .bottomtitle span {
-        display: inline-block;
-        position: relative; }
-        footer .subscribe__bottommenu .subscribe .bottomtitle span:after {
-          position: absolute;
-          top: 34px;
-          display: block;
-          content: '';
-          height: 1px;
-          width: 100%;
-          background: #ff8500; }
     footer .subscribe__bottommenu .subscribe p.newsstyle {
       line-height: 23px;
-      margin-top: 28px;
+      margin-top: 29px;
       margin-bottom: 9px;
       font-weight: 700;
       font-size: 20px;
@@ -1764,7 +1747,9 @@ footer {
       font-weight: 900;
       color: #fff;
       text-transform: uppercase;
-      margin-bottom: 15px; }
+      margin-bottom: 13px; }
+    footer .subscribe__bottommenu .subscribe p {
+      margin: 0; }
     footer .subscribe__bottommenu .subscribe form.subscribeform {
       display: flex; }
       footer .subscribe__bottommenu .subscribe form.subscribeform input[type="text"] {
@@ -1790,6 +1775,68 @@ footer {
         footer .subscribe__bottommenu .subscribe form.subscribeform button.subscribeform__submit:hover {
           background-color: #ffc925;
           cursor: pointer; }
+    footer .subscribe__bottommenu .bottommenu .bottommenu__links ul.bottommenu__links__list {
+      margin-top: 26px; }
+      footer .subscribe__bottommenu .bottommenu .bottommenu__links ul.bottommenu__links__list li.bottommenu__links__list__item {
+        margin-bottom: 15px; }
+        footer .subscribe__bottommenu .bottommenu .bottommenu__links ul.bottommenu__links__list li.bottommenu__links__list__item a {
+          font-size: 14px;
+          color: #fff; }
+          footer .subscribe__bottommenu .bottommenu .bottommenu__links ul.bottommenu__links__list li.bottommenu__links__list__item a:hover {
+            color: #ffc925; }
+  footer .bottomlogo__socialmedia .bottomlogo {
+    margin-bottom: 16px;
+    margin-top: 31px; }
+    footer .bottomlogo__socialmedia .bottomlogo a {
+      display: block;
+      padding-right: 23px; }
+  footer .bottomlogo__socialmedia span.copy {
+    font-size: 12px;
+    color: #a0a9b2;
+    display: block;
+    border-left: 1px solid #7a7a7a;
+    padding: 11px 15px; }
+  footer .bottomlogo__socialmedia .socialmedia__wezom ul.socialmedia__list {
+    margin-top: 27px; }
+    footer .bottomlogo__socialmedia .socialmedia__wezom ul.socialmedia__list li a {
+      display: block;
+      width: 49px;
+      height: 49px;
+      border: 1px solid #7b8092;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      line-height: 49px;
+      margin-right: 10px; }
+      footer .bottomlogo__socialmedia .socialmedia__wezom ul.socialmedia__list li a:hover {
+        color: #ffc925;
+        border: 1px solid #ffc925; }
+  footer .bottomlogo__socialmedia .socialmedia__wezom .wezom {
+    margin-top: 23px; }
+    footer .bottomlogo__socialmedia .socialmedia__wezom .wezom .logo_w {
+      margin-top: 22px;
+      display: block;
+      margin-right: 19px; }
+      footer .bottomlogo__socialmedia .socialmedia__wezom .wezom .logo_w img {
+        margin: 0 auto;
+        display: block;
+        width: 42px;
+        height: 15px; }
+    footer .bottomlogo__socialmedia .socialmedia__wezom .wezom .test {
+      height: 49px;
+      padding-left: 19px;
+      display: block;
+      border-left: 1px solid #7a7a7a; }
+      footer .bottomlogo__socialmedia .socialmedia__wezom .wezom .test span.white {
+        font-size: 12px;
+        display: block;
+        color: #fff; }
+      footer .bottomlogo__socialmedia .socialmedia__wezom .wezom .test span.gray {
+        padding-top: 10px;
+        white-space: nowrap;
+        font-size: 12px;
+        display: block;
+        color: #a0a9b2; }
 
 ::-webkit-input-placeholder {
   font-family: 'Roboto';
@@ -1837,5 +1884,23 @@ li {
 
 .container {
   max-width: 1360px; }
+
+.bottomtitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: #cbcbcb;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7a7a7a; }
+  .bottomtitle span {
+    display: inline-block;
+    position: relative; }
+    .bottomtitle span:after {
+      position: absolute;
+      top: 34px;
+      display: block;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: #ff8500; }
 
 /*# sourceMappingURL=app.css.map */

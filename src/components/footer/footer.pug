@@ -1,7 +1,7 @@
 footer
-    .subscribe__bottommenu
-      .container
-        .row
+    .container
+      .subscribe__bottommenu
+        .row.justify-content-between
           .col-5.subscribe
             .bottomtitle
               span Блок 1
@@ -10,6 +10,69 @@ footer
               form.justify-content-between.subscribeform(action='#')
                   input(type='text', placeholder='Укажите свой email для подписки')
                   button.subscribeform__submit Подписаться
-
-
-    .logo__socialmedia
+          .col-6.bottommenu
+            .row.justify-content-between
+              .col-4.bottommenu__links
+                .bottomtitle
+                  span Блок ссылок 1
+                ul.bottommenu__links__list
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 1
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 2
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 3
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 4
+              .col-4.bottommenu__links
+                .bottomtitle
+                  span Блок 2
+                ul.bottommenu__links__list
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 1
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 2
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 3
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 4
+              .col-4.bottommenu__links
+                .bottomtitle
+                  span Блок ссылок 3
+                ul.bottommenu__links__list
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 1
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 2
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 3
+                  li.bottommenu__links__list__item
+                    a(href='#') Ссылка 4
+      .bottomlogo__socialmedia
+        .row.justify-content-between
+          .col-5.d-flex.bottomlogo
+            a(href='#')
+              img(src='/images/logo_bottom.png', alt='Logo bottom')
+            span.copy &copy; Copyrith 2018. Тестовое задание Wezom
+          .col-6.socialmedia__wezom
+            .row.justify-content-between
+              .col-4.socialmedia
+                ul.d-flex.socialmedia__list
+                  li
+                    a(href='#')
+                      i.fab.fa-vk
+                  li
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                  li
+                    a(href='#')
+                      i.fab.fa-twitter
+                  li
+                    a(href='#')
+                      i.fab.fa-youtube
+              .col-4.d-flex.wezom
+                .logo_w
+                  img(src='/images/logo_w.png', alt='Logo W')
+                .test
+                  span.gray Разработка тестового
+                  span.white Wezom Agency

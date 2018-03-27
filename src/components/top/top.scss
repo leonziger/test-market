@@ -1,5 +1,5 @@
 .top {
-    margin-top: 34px;
+    margin-top: 31px;
     .menu {
         padding-right: 0;
 
@@ -146,11 +146,11 @@
                                         padding:4px 10px;
 
                                         &.selected{
-                                            background: #eee;
+                                            background: #d2dae0;
                                         }
 
                                         &:hover{
-                                            background: #d2dae0;
+                                            background: #ccc;
                                             cursor: pointer;
                                         }
                                     }
