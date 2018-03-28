@@ -1722,18 +1722,69 @@ header .logoline {
           background-color: #ffc925;
           cursor: pointer; }
 
-.main {
-  margin-top: -6px; }
-  .main .cards {
-    height: 718px;
-    background: url("../images/main.jpg") center center no-repeat; }
+.productcards {
+  padding-top: 25px;
+  height: 712px; }
+  .productcards .productcards__title span {
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+    color: #3b3b3b;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 12px; }
+    .productcards .productcards__title span:after {
+      position: absolute;
+      top: 52px;
+      display: block;
+      content: '';
+      width: 100%;
+      border: 1px solid #ff8500;
+      z-index: 5; }
+  .productcards .productcards__catlink a {
+    display: block;
+    text-align: right;
+    padding: 19px 0 0 15px;
+    font-size: 14px;
+    color: #000; }
+    .productcards .productcards__catlink a:after {
+      display: block;
+      content: url("../images/red_arrow.png");
+      margin: -2px -11px 0 10px; }
+    .productcards .productcards__catlink a:hover {
+      color: #ffc925; }
+  .productcards .productcards__item {
+    display: block;
+    height: 500px;
+    border: 1px solid #dbdbdb;
+    padding-top: 20px; }
+    .productcards .productcards__item .item__mark {
+      display: inline-block;
+      font-weight: 300;
+      color: #848484;
+      font-size: 14px;
+      line-height: 14px;
+      background: #f2f2f2;
+      padding: 4px 23px; }
+    .productcards .productcards__item a.item__title {
+      font-size: 17px;
+      color: #3b3b3b;
+      height: 44px;
+      width: 100%;
+      display: block; }
+    .productcards .productcards__item .ratings__comments .item__raiting {
+      display: block; }
+    .productcards .productcards__item .ratings__comments a.item__comments {
+      display: block; }
+    .productcards .productcards__item .ratings__comments .item__quanity {
+      display: block; }
 
 footer {
   background: #696969; }
   footer .subscribe__bottommenu {
     padding-top: 31px;
     border-bottom: 1px solid #7a7a7a; }
-    footer .subscribe__bottommenu .subscribe p.newsstyle {
+    footer .subscribe__bottommenu .subscribe p.white_color {
       line-height: 23px;
       margin-top: 29px;
       margin-bottom: 9px;
@@ -1741,7 +1792,7 @@ footer {
       font-size: 20px;
       color: #cbcbcb;
       text-transform: uppercase; }
-    footer .subscribe__bottommenu .subscribe p.subscribestyle {
+    footer .subscribe__bottommenu .subscribe p.gray_color {
       line-height: 26px;
       font-size: 26px;
       font-weight: 900;
