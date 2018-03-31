@@ -1468,15 +1468,13 @@ html {
     align-self: stretch !important; } }
 header .topline {
   background: #696969;
-  height: 50px; }
+  min-height: 50px; }
   header .topline .nav__container {
     display: flex;
     justify-content: space-between; }
     header .topline .nav__container .nav {
-      width: 460px;
-      margin-top: 12px;
       display: flex;
-      justify-content: space-between; }
+      align-items: center; }
       header .topline .nav__container .nav__item {
         display: block; }
         header .topline .nav__container .nav__item a {
@@ -1722,10 +1720,10 @@ header .logoline {
           background-color: #ffc925;
           cursor: pointer; }
 
-.productcards {
+.products {
   padding-top: 25px;
   height: 712px; }
-  .productcards .productcards__title span {
+  .products .products__title span {
     display: inline-block;
     position: relative;
     font-size: 36px;
@@ -1733,7 +1731,7 @@ header .logoline {
     font-weight: 400;
     line-height: 40px;
     margin-bottom: 12px; }
-    .productcards .productcards__title span:after {
+    .products .products__title span:after {
       position: absolute;
       top: 52px;
       display: block;
@@ -1741,24 +1739,24 @@ header .logoline {
       width: 100%;
       border: 1px solid #ff8500;
       z-index: 5; }
-  .productcards .productcards__catlink a {
+  .products .products__catlink a {
     display: block;
     text-align: right;
     padding: 19px 0 0 15px;
     font-size: 14px;
     color: #000; }
-    .productcards .productcards__catlink a:after {
+    .products .products__catlink a:after {
       display: block;
       content: url("../images/red_arrow.png");
       margin: -2px -11px 0 10px; }
-    .productcards .productcards__catlink a:hover {
+    .products .products__catlink a:hover {
       color: #ffc925; }
-  .productcards .productcards__item {
+  .products .products__item {
     display: block;
     height: 500px;
     border: 1px solid #dbdbdb;
     padding-top: 20px; }
-    .productcards .productcards__item .item__mark {
+    .products .products__item .item__mark {
       display: inline-block;
       font-weight: 300;
       color: #848484;
@@ -1766,17 +1764,17 @@ header .logoline {
       line-height: 14px;
       background: #f2f2f2;
       padding: 4px 23px; }
-    .productcards .productcards__item a.item__title {
+    .products .products__item a.item__title {
       font-size: 17px;
       color: #3b3b3b;
       height: 44px;
       width: 100%;
       display: block; }
-    .productcards .productcards__item .ratings__comments .item__raiting {
+    .products .products__item .ratings__comments .item__raiting {
       display: block; }
-    .productcards .productcards__item .ratings__comments a.item__comments {
+    .products .products__item .ratings__comments a.item__comments {
       display: block; }
-    .productcards .productcards__item .ratings__comments .item__quanity {
+    .products .products__item .ratings__comments .item__quanity {
       display: block; }
 
 footer {
@@ -1937,21 +1935,16 @@ li {
   max-width: 1360px; }
 
 .bottomtitle {
+  display: flex;
   font-weight: 500;
   font-size: 20px;
   color: #cbcbcb;
-  padding-bottom: 10px;
   border-bottom: 1px solid #7a7a7a; }
   .bottomtitle span {
     display: inline-block;
-    position: relative; }
-    .bottomtitle span:after {
-      position: absolute;
-      top: 34px;
-      display: block;
-      content: '';
-      height: 1px;
-      width: 100%;
-      background: #ff8500; }
+    position: relative;
+    bottom: -1px;
+    border-bottom: 1px solid #ff8900;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=app.css.map */

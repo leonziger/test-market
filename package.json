@@ -36,6 +36,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "gulp.spritesmith": "^6.5.1",
+    "node-sass": "^4.8.3",
     "vinyl-buffer": "^1.0.1"
   },
   "dependencies": {
@@ -43,5 +44,8 @@
     "font-awesome": "^4.7.0",
     "gulp-sass": "^3.2.1",
     "jquery": "^1.7.2"
-  }
+  },
+  "description": "1. Run `npm install` to install dependencies.\r 2. Run `npm start` to start the development server.  \r    It should automatically open the client in your browser when ready.",
+  "main": "gulpfile.js",
+  "license": "ISC"
 }

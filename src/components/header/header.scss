@@ -1,17 +1,17 @@
 header {
   .topline{
     background: #696969;
-    height: 50px;
+    min-height: 50px;
 
     .nav__container {
       display: flex;
       justify-content: space-between;
 
       .nav {
-        width: 460px;
-        margin-top: 12px;
+        //width: 460px;
+        //margin-top: 12px;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
 
         &__item {
           display: block;

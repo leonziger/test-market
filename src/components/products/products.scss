@@ -1,0 +1,42 @@
+@import "./product/product.scss";
+
+
+.products{
+  padding-top: 22px;
+  height: 719px;
+
+  &__title{
+    position: relative;
+    bottom: -1px;
+
+    span{
+      z-index: 1;
+      font-size: 36px;
+      color: #3b3b3b;
+      font-weight: 400;
+    }
+  }
+
+  .products__catlink{
+    a{
+      display: block;
+      text-align: right;
+      padding: 23px 0 0 15px;
+      font-size: 14px;
+      color: #000;
+      &:after{
+        display: block;
+        content: url('../images/red_arrow.png');
+        margin: -2px -11px 0 10px;
+      }
+
+      &:hover{
+        color: #ffc925;
+      }
+
+    }
+
+  }
+
+
+}
