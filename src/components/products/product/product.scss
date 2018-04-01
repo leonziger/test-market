@@ -1,9 +1,8 @@
 .product{
   display: block;
-  height: 500px;
   border-top: 1px solid #dbdbdb;
   border-left: 1px solid #dbdbdb;
-  padding-top: 18px;
+  padding-top: 19px;
   padding-bottom: 15px;
 
   &:nth-child(4n){
@@ -19,6 +18,9 @@
     color: #3b3b3b;
     display: block;
     text-decoration: underline;
+    margin-top: 15px;
+    line-height: 26px;
+    height: 43px;
 
     &:hover{
       text-decoration: none;
@@ -31,10 +33,19 @@
     color:#848484;
     font-size: 14px;
     background: #f2f2f2;
-    padding: 4px 22px;
+    padding: 3px 22px;
+    text-decoration: none;
+    transition: .2s;
+
+    &:hover{
+      color: #fff;
+      background: #ffc925;
+    }
   }
 
   &__info{
+    margin-top: 20px;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
   }
@@ -42,6 +53,17 @@
   &__rating{
     display: flex;
     align-items: center;
+
+    span{
+      width: 15px;
+      height: 14px;
+      margin-right: 5px;
+      background: url("../images/product/star.png");
+    }
+
+    span.active{
+      background: url("../images/product/star_active.png");
+    }
   }
 
   &__comments{
@@ -56,4 +78,162 @@
     font-size: 12px;
     margin-left: auto;
   }
+
+  &TypePic{
+    display: flex;
+  }
+
+  &__labels{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__label{
+    display: block;
+  }
+
+  &__labelIcon{
+
+  }
+
+  &__labelTitle{
+    margin-top: 10px;
+    text-align: center;
+    color: #91959a;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  &__pic{
+    display: inline-flex;
+    margin-left: 30px;
+  }
+
+  &__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__priceNew{
+    display: flex;
+    margin-top: 3px;
+    color: #3b3b3b;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 26px;
+
+    span{
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__priceOld{
+    color: #989898;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 16px;
+    text-decoration: line-through;
+    text-decoration-color: #e00000;
+  }
+
+  &__actions{
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+    color: #ffffff;
+
+    span.actions{
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__actionsNew{
+    /* Style for "Layer 17" */
+    width: 96px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/product/action_green.png') no-repeat 0 0;
+  }
+
+  &__actionsHit{
+    width: 96px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/product/action_violet.png') no-repeat 0 0;
+  }
+
+  &__actionsDiscont{
+    width: 96px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/product/action_red.png') no-repeat 0 0;
+  }
+
+  &__buy{
+    margin: 23px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 50px;
+    background: url('../images/product/buy_button_gradient.png');
+    border: 0;
+    outline: 0;
+
+    span{
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &:hover{
+      background: url('../images/product/buy_button_gradient_hover.png');
+      cursor: pointer;
+    }
+  }
+
+  &__using{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__usingItem{
+    a{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #3b3b3b;
+      font-size: 14px;
+      font-weight: 400;
+
+      span{
+        margin-left: 10px;
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+  }
 }
+
