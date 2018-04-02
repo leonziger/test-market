@@ -12,43 +12,36 @@
         a.product__title(href='#') Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
         .product__info
           .product__rating
-            span.active
-            span.active
-            span.active
-            span
-            span
+            span.ratedOn
+            span.ratedOn
+            span.ratedOn
+            span.ratedOn
+            span.ratedOn
           a.product__comments(href='#') Отзывы (10)
           .product__quantity В наличии: 24 шт.
-        .productTypePic
+        .product__picture
           ul.product__labels
             li.product__label
-              .product__labelIcon
-                img(src='./images/product/sun.png')
+              img.product__labelIcon(src='./images/product/sun.png')
               .product__labelTitle Летняя
             li.product__label
-              .product__labelIcon
-                img(src='./images/product/car.png')
+              img.product__labelIcon(src='./images/product/car.png')
               .product__labelTitle Легковая
             li.product__label
-              .product__labelIcon
-                img(src='./images/product/new.png')
+              img.product__labelIcon(src='./images/product/new.png')
               .product__labelTitle Новая
-          .product__pic
-            img(src='./images/product1.jpg')
+          img(src='./images/product1.jpg')
         .product__actions
-          .product__actionsNew
-            span.actions Новинка
-          .product__actionsHit
-            span.actions Хит
-          .product__actionsDiscont
-            span.actions Скидка
+          .product__action.product__action_new Новинка
+          .product__action.product__action_hit Хит
+          .product__action.product__action_discont Скидка
         .product__price
           .product__priceNew 599
             span &nbsp;грн.
           .product__priceOld 1 250
             span &nbsp;грн.
         button.product__buy
-          img()
+          img(src='./images/product/basket.png')
           span Купить товар
         ul.product__using
           li.product__usingItem
