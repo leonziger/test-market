@@ -1,20 +1,25 @@
 header {
-  .topline{
+  .top-line{
     background: #696969;
     min-height: 50px;
 
-    .nav-entrance {
+    .nav-auth {
       display: flex;
       justify-content: space-between;
     }
 
     .nav {
-      margin-left: -15px;
       display: flex;
       align-items: center;
 
       &__item{
         display: block;
+
+        &.active{
+          .nav__link{
+            border-bottom: 3px solid #ffc925;
+          }
+        }
       }
 
       &__link {
@@ -35,7 +40,7 @@ header {
       }
     }
 
-    .entrance {
+    .auth {
       display: block;
       background-color: #ff8900;
       width: 125px;
@@ -67,13 +72,13 @@ header {
     }
   }
 
-  .logoline{
+  .logo-line{
     margin-top: 37px;
 
-    .toplogo{
+    .top-logo{
       margin-top: 4px;
     }
-    .topcontacts {
+    .top-contacts {
       height: 50px;
       background-color: #f5f5f5;
       display: flex;
@@ -84,7 +89,7 @@ header {
       font-size: 16px;
       white-space: nowrap;
 
-      span.topcontacts__item {
+      &__item {
         display: block;
         height: inherit;
         width: 167px;
@@ -92,7 +97,7 @@ header {
         margin-left: 13px;
       }
 
-      button.topcontacts__button {
+      &__button {
         margin-left: 17px;
         height: inherit;
         width: 197px;
@@ -123,12 +128,13 @@ header {
         }
       }
     }
-    .basketblock{
+
+    .compare-basket{
       height: 57px;
       display: flex;
       justify-content: space-around;
 
-      .basketblock__item{
+      &__item{
         width: 116px;
         display: block;
         position: relative;
