@@ -1,34 +1,9 @@
 .top
   .container
     .row
-      .col-3.menu
-        .menu__header
-          .menu__toogle
-            img(src='./images/burger.png', alt='')
-          .menu__title Меню
-        ul.menu__items
-          li.menu__item
-            a(href='#') Ссылка 1
-          li.menu__item
-            a(href='#') Ссылка 2
-          li.menu__item
-            a(href='#') Ссылка 3
-          li.menu__item
-            a(href='#') Ссылка 4
-          li.menu__item
-            a(href='#') Ссылка 5
-          li.menu__item
-            a(href='#') Ссылка 6
-          li.menu__item
-            a(href='#') Ссылка 7
+      .col-3
+        include ../menu/menu
       .col-9
-        .search
-          form.search__form(action='#')
-            input(type='text', placeholder='Поиск по сайту')
-            .search__form__select
-              select
-                option(selected='') Все категории
-                option Категория 1
-                option Категория 2
-            button.search__form__submit Поиск
-        .filter
+        include ../search/search
+        include ../filter/filter
+

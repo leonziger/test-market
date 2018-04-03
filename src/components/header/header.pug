@@ -1,42 +1,28 @@
-header
-    .top-line
-      .container.nav-auth
-          ul.nav
-              li.nav__item
-                a.nav__link(href='#') Главная
-              li.nav__item.active
-                a.nav__link(href='#') О компании
-              li.nav__item
-                a.nav__link(href='#') Ссылка 1
-              li.nav__item
-                a.nav__link(href='#') Ссылка 2
-              li.nav__item
-                a.nav__link(href='#') Ссылка 3
-          .auth
-              a(href='#') Вход
-    .logo-line
-        .container
-            .row
-                .col-3.top-logo
-                    a(href='/')
-                        img(src='./images/logo_top.png', alt='Logo')
-                .col-9
-                    .row.justify-content-between
-                        .col-7
-                            .top-contacts
-                                span.top-contacts__item +380 98 170 00 740
-                                span.top-contacts__item +380 98 170 00 740
-                                button.top-contacts__button
-                                    span Перезвонить мне
-                        ul.col-4
-                            .compare-basket
-                                li.compare-basket__item
-                                    img(src='./images/ico_compare.png', alt='')
-                                    span Сравнение
-                                li.compare-basket__item
-                                    img(src='./images/ico_favorite.png', alt='')
-                                    span Избранное
-                                li.compare-basket__item
-                                    img.quantity(src='./images/ico_basket_quantity.png', alt='')
-                                    img(src='./images/ico_basket.png', alt='')
-                                    span Корзина
+header.main-header
+    .main-header__top
+      .container.main-header__nav
+        include ../nav/nav
+        .main-header__auth-btn
+          a(href='#') Вход
+    .main-header__bottom
+      .container
+        .row
+          .col-3.top-logo
+              a(href='/')
+                  img(src='./images/logo_top.png', alt='Logo')
+          .col-9
+            .row.justify-content-between
+              .col-7
+                include ../top-contacts/top-contacts
+              ul.col-4
+                .main-header__actions
+                  li.main-header__actions-item
+                    img(src='./images/ico_compare.png', alt='')
+                    span Сравнение
+                  li.main-header__actions-item
+                    img(src='./images/ico_favorite.png', alt='')
+                    span Избранное
+                  li.main-header__actions-item.main-header__actions-item_cart
+                    img.quantity(src='./images/ico_basket_quantity.png', alt='')
+                    img(src='./images/ico_basket.png', alt='')
+                    span Корзина

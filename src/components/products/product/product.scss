@@ -1,17 +1,14 @@
 .product{
   display: block;
-  border-top: 1px solid #dbdbdb;
-  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   padding-top: 19px;
   padding-bottom: 15px;
 
   &:nth-child(4n){
-    border-right: 1px solid #dbdbdb;
+    border-right: 0;
   }
 
-  &:nth-child(4n+4){
-    border-bottom: 1px solid #dbdbdb;
-  }
 
   &__title{
     font-size: 17px;
