@@ -120,6 +120,11 @@
     justify-content: center;
     align-items: center;
     min-height: 205px;
+
+    &_main{
+      width: 157px;
+      height: 205px;
+    }
   }
 
   &__price{

@@ -1,78 +1,79 @@
-footer
+footer.main-footer
     .container
-      .subscribe__bottommenu
+      .main-footer__top
         .row.justify-content-between
-          .col-5.subscribe
-            .bottomtitle
+          .col-5
+            h3.bottomtitle
               span Блок 1
-            p.white_color Будьте в курсе новостей и новинок!
-            p.gray_color Подписывайтесь на рассылку
-              form.justify-content-between.subscribeform(action='#')
-                  input(type='text', placeholder='Укажите свой email для подписки')
-                  button.subscribeform__submit Подписаться
-          .col-6.bottommenu
+            .main-footer__content
+              .main-footer__content_white Будьте в курсе новостей и новинок!
+              .main-footer__content_gray Подписывайтесь на рассылку
+            form.justify-content-between.subscribe(action='#')
+                input.subscribe__field(placeholder='Укажите свой email для подписки')
+                button.subscribe__submit Подписаться
+          .col-6
             .row.justify-content-between
-              .col-4.bottommenu__links
-                .bottomtitle
+              .col-4
+                h3.bottomtitle
                   span Блок ссылок 1
-                ul.bottommenu__links__list
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 1
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 2
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 3
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 4
-              .col-4.bottommenu__links
+                ul.bottom-menu
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 1
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 2
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 3
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 4
+              .col-4
                 h3.bottomtitle
                   span Блок 2
-                ul.bottommenu__links__list
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 1
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 2
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 3
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 4
+                ul.bottom-menu
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 1
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 2
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 3
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 4
               .col-4.bottommenu__links
                 h3.bottomtitle
                   span Блок ссылок 3
-                ul.bottommenu__links__list
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 1
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 2
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 3
-                  li.bottommenu__links__list__item
-                    a(href='#') Ссылка 4
-      .bottomlogo__socialmedia
+                ul.bottom-menu
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 1
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 2
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 3
+                  li.bottom-menu__item
+                    a.bottom-menu__link(href='#') Ссылка 4
+      .main-footer__bottom
         .row.justify-content-between
-          .col-5.d-flex.bottomlogo
+          .col-5.d-flex.bottom-logo
             a(href='#')
               img(src='./images/logo_bottom.png', alt='Logo bottom')
-            span.copy &copy; Copyrith 2018. Тестовое задание Wezom
-          .col-6.socialmedia__wezom
+            .bottom-logo__copy &copy; Copyrith 2018. Тестовое задание Wezom
+          .col-6
             .row.justify-content-between
-              .col-4.socialmedia
-                ul.d-flex.socialmedia__list
-                  li
-                    a(href='#')
+              .col-4.social-media
+                ul.d-flex.social-media__list
+                  li.social-media__item
+                    a.social-media__link(href='#')
                       i.fab.fa-vk
-                  li
-                    a(href='#')
+                  li.social-media__item
+                    a.social-media__link(href='#')
                       i.fab.fa-facebook-f
-                  li
-                    a(href='#')
+                  li.social-media__item
+                    a.social-media__link(href='#')
                       i.fab.fa-twitter
-                  li
-                    a(href='#')
+                  li.social-media__item
+                    a.social-media__link(href='#')
                       i.fab.fa-youtube
               .col-4.d-flex.wezom
-                .logo_w
+                .wezom__logo
                   img(src='./images/logo_w.png', alt='Logo W')
-                .test
-                  span.gray Разработка тестового
-                  span.white Wezom Agency
+                .wezom__content
+                  .wezom__content-gray Разработка тестового
+                  .wezom__content-white Wezom Agency
