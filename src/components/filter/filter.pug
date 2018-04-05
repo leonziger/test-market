@@ -1,1 +1,61 @@
 .filter
+  ul.filter__tabs
+    li.filter__tab.active
+      a.filter__link
+        img.filter__pic(src='images/filter_tab1_active.png')
+        .filter__title Ссылка 1
+    li.filter__tab
+      a.filter__link
+        img.filter__pic(src='images/filter_tab2.png')
+        .filter__title Ссылка 2
+    li.filter__tab
+      a.filter__link
+        img.filter__pic(src='images/filter_tab3.png')
+        .filter__title Ссылка 3
+    li.filter__tab
+      a.filter__link
+        img.filter__pic(src='images/filter_tab4.png')
+        .filter__title Ссылка 4
+    li.filter__tab
+      a.filter__link
+        img.filter__pic(src='images/filter_tab5.png')
+        .filter__title Ссылка 5
+  ul.filter__blocks
+    li.filter__block
+      form.filter__options
+        .filter__toggle
+          label.filter__label
+            input.filter__radio(type='radio')
+            i
+            span.filter__label_title Tab 1
+          label.filter__label.active
+            input.filter__radio(type='radio')
+            i
+            span.filter__label_title Tab 2
+        .filter__selects
+          .filter__selector
+            select
+              option(selected) Select 1
+              option Категория 1
+              option Категория 2
+          .filter__selector
+            select
+              option(selected) Select 2
+              option Категория 1
+              option Категория 2
+          .filter__selector
+            select
+              option(selected) Select 3
+              option Категория 1
+              option Категория 2
+          .filter__selector
+            select
+              option(selected) Select 4
+              option Категория 1
+              option Категория 2
+          .filter__selector
+            select
+              option(selected) Select 6
+              option Категория 1
+              option Категория 2
+          .filter__prices

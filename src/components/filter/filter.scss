@@ -1,3 +1,157 @@
-.filter{
+.filter {
+  margin-top: 20px;
 
+  &__tabs {
+    background: #606a76;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: space-between;
+
+    &.active {
+      .filter__link {
+        border-bottom: 2px solid #ffc925;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 70px;
+    border-bottom: 2px solid #606a76;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 2px solid #ffc925;
+    }
+  }
+
+  &__pic {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__blocks {
+    height: 300px;
+    background-color: #696969;
+  }
+
+  &__options {
+    padding: 24px 36px;
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: space-around;
+    width: 281px;
+    height: 44px;
+    background-color: #efefef;
+    padding: 3px 2px;
+  }
+
+  &__label {
+    &_title {
+      padding: 10px 50px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      color: #696969;
+    }
+
+    &.active {
+      .filter__label_title {
+        color: #fff;
+        background: #ff8900;
+      }
+    }
+
+    &:hover{
+      cursor: pointer;
+
+      .filter__label_title {
+        color: #fff;
+        background: #ff8900;
+      }
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__selects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__selector{
+    margin-top: 23px;
+    display: block;
+    background-color: #fff;
+    width: 222px;
+    height: 42px;
+
+    .jselector{
+      select{
+        display: none;
+      }
+
+      .wrap{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 12px 0 16px 15px;
+        border: none;
+        outline: none;
+        position: relative;
+      }
+
+      button{
+        position:absolute;
+        top:8px;
+        right:25px;
+        width: 25px;
+        height: 25px;
+        border:none;
+        background: url('../images/red_dropdown.png') no-repeat center;
+        font-size: 0px;
+      }
+
+      .dropdown{
+        display: none;
+        position:absolute;
+        left:0px;
+        right:0px;
+        top:30px;
+
+      }
+    }
+  }
+
+  &__prices{
+    margin-top: 23px;
+    display: block;
+    background-color: #fff;
+    width: 222px;
+    height: 42px;
+  }
 }
+
