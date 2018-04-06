@@ -49,7 +49,6 @@
   }
 
   &__blocks {
-    height: 300px;
     background-color: #696969;
   }
 
@@ -98,19 +97,24 @@
 
   &__selects{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
   }
 
   &__selector{
     margin-top: 23px;
     display: block;
-    background-color: #fff;
     width: 222px;
     height: 42px;
+    border-bottom: 1px solid white;
+    margin-right: 10px;
 
     .jselector{
+      height: 40px;
+      background-color: #fff;
+
+      position: relative;
+
       select{
         display: none;
       }
@@ -143,15 +147,114 @@
         top:30px;
 
       }
+
+      &.is-shown{
+        .dropdown{
+          display: block;
+          background-color: #fff;
+          position:absolute;
+          left:0px;
+          right:0px;
+          top:30px;
+          z-index: 2;
+
+          ul{
+            list-style: none;
+            border:none;
+
+            li{
+              padding:5px 10px;
+              font-size: 14px;
+
+              &.selected{
+                background: #d2dae0;
+              }
+
+              &:hover{
+                background: #ccc;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(4){
+      margin-right: 0;
+    }
+
+    &:hover{
+      border-bottom: 1px solid #ff8500;
+      cursor: pointer;
     }
   }
 
   &__prices{
     margin-top: 23px;
-    display: block;
-    background-color: #fff;
     width: 222px;
-    height: 42px;
+
+  }
+
+  &__pricesTitle{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #fff;
+    padding-right: 13px;
+  }
+
+  &__price{
+    background-color: #fff;
+    width: 74px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 13px;
+  }
+
+
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 36px 28px;
+    background: #696969;
+  }
+
+  &__reset{
+    width: 210px;
+    height: 50px;
+    background-color: #ff4800;
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+
+    &:hover{
+      background: #ff8900;
+      cursor: pointer;
+    }
+  }
+
+  &__submit{
+    width: 210px;
+    height: 50px;
+    background-image: linear-gradient(to right, #ff8500 0%, #ffae00 100%);
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    &:hover{
+      background: #ff8900;
+      cursor: pointer;
+    }
   }
 }
 
