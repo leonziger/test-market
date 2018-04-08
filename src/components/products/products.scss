@@ -22,16 +22,21 @@
   }
 
   &__catlink{
+    display: flex;
+    justify-content: flex-end;
+
     a{
-      display: block;
+      display: inline-block;
       text-align: right;
       padding: 23px 0 0 15px;
       font-size: 14px;
       color: #000;
+      text-decoration: underline;
+
       &:after{
-        display: block;
+        display: inline-block;
         content: url('../images/red_arrow.png');
-        margin: -2px -11px 0 10px;
+        margin-left: 10px;
       }
 
       &:hover{
