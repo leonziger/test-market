@@ -114,17 +114,16 @@
     text-transform: uppercase;
   }
 
-  &__picture{
+  &__preview{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 205px;
+    height: 205px;
+  }
 
-    &_main{
-      width: 157px;
-      height: 205px;
-    }
+  &__picture{
+    max-height: 100%;
   }
 
   &__price{

@@ -2,7 +2,9 @@
 @import '../menu/menu';
 @import '../nav/nav';
 @import '../search/search';
+@import '../btn/btn';
 @import '../filter/filter';
+@import '../social-media/social-media';
 
 .main-header {
 
@@ -45,7 +47,14 @@
   &__nav {
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 768px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
+
 
   &__bottom{
     margin-top: 37px;

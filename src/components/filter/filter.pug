@@ -1,6 +1,6 @@
 .filter
   ul.filter__tabs
-    li.filter__tab.active
+    li.filter__tab.filter__tab_active
       a.filter__link
         img.filter__pic(src='images/filter_tab1_active.png')
         .filter__title Ссылка 1
@@ -22,51 +22,55 @@
         .filter__title Ссылка 5
   ul.filter__blocks
     li.filter__block
-      form.filter__options
+      form
         .filter__toggle
-          label.filter__label
-            input.filter__radio(type='radio')
-            i
-            span.filter__label_title Tab 1
-          label.filter__label.active
-            input.filter__radio(type='radio')
-            i
-            span.filter__label_title Tab 2
+          label.filter__label Tab 1
+          label.filter__label.filter__label_active Tab 2
         .filter__selects
-          .filter__selector
-            select
-              option(selected) Select 1
-              option Опция 11
-              option Опция 12
-          .filter__selector
-            select
-              option(selected) Select 2
-              option Опция 21
-              option Опция 22
-              option Опция 23
-          .filter__selector
-            select
-              option(selected) Select 3
-              option Опция 31
-              option Опция 32
-          .filter__selector
-            select
-              option(selected) Select 4
-              option Опция 41
-              option Опция 42
-          .filter__selector
-            select
-              option(selected) Select 6
-              option Опция 61
-              option Опция 62
-          .filter__prices
-            label
+          .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 1
+                option Опция 11
+                option Опция 12
+          .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 2
+                option Опция 21
+                option Опция 22
+                option Опция 23
+          .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 3
+                option Опция 31
+                option Опция 32
+          .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 4
+                option Опция 41
+                option Опция 42
+          .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 6
+                option Опция 61
+                option Опция 62
+          .filter__selectsItem
+            .filter__prices
               .filter__pricesTitle Цена
-              input.filter__price
-              input.filter__price
-      .filter__buttons
-        input(type='submit', value='Очистить фильтр', class='filter__reset')
-        input(type='submit', value='Применить фильтр', class='filter__submit')
+                .filter__pricesInputs
+                  .filter__pricesBg
+                    input.filter__price
+                  .filter__pricesBg
+                    input.filter__price
+        .filter__buttons
+          button.btn.filter__reset
+            span Очистить фильтр
+          button.btn.filter__submit
+            span Применить фильтр
 
 
 

@@ -7,8 +7,37 @@
 
     .subscribe{
       display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      &__content_white{
+        display: block;
+        line-height: 23px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #cbcbcb;
+        text-transform: uppercase;
+      }
+
+      &__content_gray{
+        display: block;
+        line-height: 26px;
+        font-size: 26px;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+      }
+
+      &__form{
+        display: flex;
+        justify-content: space-between;
+      }
 
       &__field{
+        display: inline-flex;
         height: 50px;
         width: 406px;
         border: none;
@@ -17,10 +46,12 @@
         font-size: 14px;
         color: #9c9c9c;
         padding-left: 30px;
-        margin-bottom: 40px;
       }
 
       &__submit{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         border:none;
         outline: none;
         background: #ff8900;
@@ -56,33 +87,12 @@
     }
   }
 
-  &__content{
-    &_white{
-      line-height: 23px;
-      margin-top: 30px;
-      margin-bottom: 8px;
-      font-weight: 700;
-      font-size: 20px;
-      color: #cbcbcb;
-      text-transform: uppercase;
-    }
-
-    &_gray{
-      line-height: 26px;
-      font-size: 26px;
-      font-weight: 900;
-      color: #fff;
-      text-transform: uppercase;
-      margin-bottom: 13px;
-    }
-
-  }
-
   &__bottom{
 
     .bottom-logo{
       margin-bottom: 16px;
       margin-top: 31px;
+      display: flex;
 
       a{
         display: block;
@@ -98,44 +108,16 @@
       }
     }
 
-    .social-media{
-
-      &__list{
-        margin-top: 27px;
-      }
-
-      &__link{
-        display: block;
-        width: 49px;
-        height: 49px;
-        border: 1px solid #7b8092;
-        text-decoration: none;
-        color: #fff;
-        text-align: center;
-        line-height: 49px;
-        margin-right: 10px;
-
-        &:hover{
-          color: #ffc925;
-          border: 1px solid #ffc925;
-        }
-      }
-    }
-
     .wezom{
       margin-top: 23px;
+      display: flex;
 
       &__logo{
         margin-top: 22px;
         display: block;
         margin-right: 19px;
-
-        img{
-          margin: 0 auto;
-          display: block;
-          width: 42px;
-          height: 15px;
-        }
+        width: 42px;
+        height: 15px;
       }
 
       &__content{
