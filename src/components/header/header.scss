@@ -14,16 +14,17 @@
   }
 
   &__auth-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff8900;
     width: 125px;
     height: 50px;
 
     a {
-      margin-top: 17px;
-      margin-left: 37px;
-      display: block;
+      display: flex;
       text-align: left;
+      padding: 2px;
       font-size: 12px;
       color: #fff;
       text-transform: uppercase;
@@ -33,8 +34,6 @@
         margin-top: -1px;
         margin-right: 8px;
         content:url(/images/ico_entrance.png);
-        display: block;
-        float: left;
       }
     }
 

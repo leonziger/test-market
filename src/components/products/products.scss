@@ -51,5 +51,9 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #dbdbdb;
+
+    @media (max-width:768px){
+      flex-wrap: wrap;
+    }
   }
 }
