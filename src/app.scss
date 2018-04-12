@@ -25,10 +25,8 @@ li{
 }
 
 
- .container{
-     max-width: 1360px;
+@media (min-width: 1390px) {
+  .container{
+    max-width: 1360px;
+  }
 }
-
-
-
-
