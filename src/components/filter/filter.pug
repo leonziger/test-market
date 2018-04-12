@@ -1,7 +1,7 @@
 .filter
   ul.filter__tabs
-    li.filter__tab.filter__tab_active
-      a.filter__link
+    li.filter__tab
+      a.filter__link.filter__link_active
         img.filter__pic(src='images/filter_tab1_active.png')
         .filter__title Ссылка 1
     li.filter__tab
@@ -55,22 +55,33 @@
           .filter__selectsItem
             .filter__selector
               select
+                option(selected) Select 5
+                option Опция 51
+                option Опция 52
+          .filter__selectsItem
+            .filter__selector
+              select
                 option(selected) Select 6
                 option Опция 61
                 option Опция 62
           .filter__selectsItem
+            .filter__selector
+              select
+                option(selected) Select 7
+                option Опция 71
+                option Опция 72
+
+          .filter__selectsItem
             .filter__prices
               .filter__pricesTitle Цена
-                .filter__pricesInputs
-                  .filter__pricesBg
-                    input.filter__price
-                  .filter__pricesBg
-                    input.filter__price
+              .filter__pricesInputs
+                .filter__pricesInputGroup
+                  input.filter__input
+                .filter__pricesInputGroup
+                  input.filter__input
+
         .filter__buttons
           button.btn.filter__reset
             span Очистить фильтр
           button.btn.filter__submit
             span Применить фильтр
-
-
-
