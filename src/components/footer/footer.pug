@@ -2,7 +2,7 @@ footer.main-footer
     .container
       .main-footer__top
         .row.justify-content-between
-          .col-5
+          .col-5.col-sm-12.col-md-12.col-lg-6.col-xl-6
             h3.bottomtitle
               span Блок 1
             form.subscribe(action='#')
@@ -11,7 +11,7 @@ footer.main-footer
               .subscribe__form
                 input.subscribe__field(placeholder='Укажите свой email для подписки')
                 button.subscribe__submit Подписаться
-          .col-6
+          .col-6.col-sm-12.col-md-12.col-lg-6.col-xl-6
             .row.justify-content-between
               .col-4
                 h3.bottomtitle
@@ -59,7 +59,7 @@ footer.main-footer
             .row.justify-content-between
               .col-5
                 include ../social-media/social-media
-              .col-4.wezom
+              .col-5.wezom
                 img.wezom__logo(src='./images/logo_w.png', alt='Logo W')
                 .wezom__content
                   .wezom__content-gray Разработка тестового

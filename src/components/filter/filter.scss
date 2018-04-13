@@ -44,7 +44,7 @@
     padding: 24px 36px;
   }
 
-  &__toggle {
+  &__innerTabs {
     display: flex;
     justify-content: space-around;
     width: 281px;
@@ -53,7 +53,7 @@
     background-color: #efefef;
   }
 
-  &__label {
+  &__innerTab {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -76,8 +76,12 @@
     }
   }
 
-  &__radio {
+  &__innerBlock{
     display: none;
+
+    &_active{
+      display: block;
+    }
   }
 
   &__selects {

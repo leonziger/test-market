@@ -33,7 +33,7 @@
 
       &__form{
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
       }
 
       &__field{
@@ -109,8 +109,9 @@
     }
 
     .wezom{
-      margin-top: 23px;
       display: flex;
+      margin-top: 23px;
+      padding-left: 48px;
 
       &__logo{
         margin-top: 22px;
@@ -121,9 +122,11 @@
       }
 
       &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 49px;
         padding-left: 19px;
-        display: block;
         border-left: 1px solid #7a7a7a;
 
         &-white{
@@ -133,8 +136,6 @@
         }
 
         &-gray{
-          padding-top: 10px;
-          white-space: nowrap;
           font-size: 12px;
           display: block;
           color: #a0a9b2;

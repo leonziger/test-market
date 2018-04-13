@@ -22,66 +22,115 @@
         .filter__title Ссылка 5
   ul.filter__blocks
     li.filter__block
-      form
-        .filter__toggle
-          label.filter__label Tab 1
-          label.filter__label.filter__label_active Tab 2
-        .filter__selects
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 1
-                option Опция 11
-                option Опция 12
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 2
-                option Опция 21
-                option Опция 22
-                option Опция 23
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 3
-                option Опция 31
-                option Опция 32
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 4
-                option Опция 41
-                option Опция 42
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 5
-                option Опция 51
-                option Опция 52
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 6
-                option Опция 61
-                option Опция 62
-          .filter__selectsItem
-            .filter__selector
-              select
-                option(selected) Select 7
-                option Опция 71
-                option Опция 72
+      ul.filter__innerTabs
+        li.filter__innerTab Tab 1
+        li.filter__innerTab.filter__innerTab_active Tab 2
+      ul.filter__innerBlocks
+        li.filter__innerBlock
+          form
+            .filter__selects
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 1
+                    option Опция 11
+                    option Опция 12
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 2
+                    option Опция 21
+                    option Опция 22
+                    option Опция 23
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 3
+                    option Опция 31
+                    option Опция 32
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 4
+                    option Опция 41
+                    option Опция 42
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 5
+                    option Опция 51
+                    option Опция 52
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 6
+                    option Опция 61
+                    option Опция 62
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 7
+                    option Опция 71
+                    option Опция 72
 
-          .filter__selectsItem
-            .filter__prices
-              .filter__pricesTitle Цена
-              .filter__pricesInputs
-                .filter__pricesInputGroup
-                  input.filter__input
-                .filter__pricesInputGroup
-                  input.filter__input
+              .filter__selectsItem
+                .filter__prices
+                  .filter__pricesTitle Цена
+                  .filter__pricesInputs
+                    .filter__pricesInputGroup
+                      input.filter__input
+                    .filter__pricesInputGroup
+                      input.filter__input
 
-        .filter__buttons
-          button.btn.filter__reset
-            span Очистить фильтр
-          button.btn.filter__submit
-            span Применить фильтр
+            .filter__buttons
+              button.btn.filter__reset
+                span Очистить фильтр
+              button.btn.filter__submit
+                span Применить фильтр
+        li.filter__innerBlock.filter__innerBlock_active
+          form
+            .filter__selects
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 1
+                    option Опция 11
+                    option Опция 12
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 2
+                    option Опция 21
+                    option Опция 22
+                    option Опция 23
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 3
+                    option Опция 31
+                    option Опция 32
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 4
+                    option Опция 41
+                    option Опция 42
+              .filter__selectsItem
+                .filter__selector
+                  select
+                    option(selected) Select 6
+                    option Опция 61
+                    option Опция 62
+              .filter__selectsItem
+                .filter__prices
+                  .filter__pricesTitle Цена
+                  .filter__pricesInputs
+                    .filter__pricesInputGroup
+                      input.filter__input
+                    .filter__pricesInputGroup
+                      input.filter__input
+            .filter__buttons
+              button.btn.filter__reset
+                span Очистить фильтр
+              button.btn.filter__submit
+                span Применить фильтр
