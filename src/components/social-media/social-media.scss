@@ -2,18 +2,24 @@
   margin-top: 27px;
   display: flex;
 
-  &__link{
-    display: block;
+  @media (max-width: 992px) {
+    justify-content: center
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 49px;
     height: 49px;
+    margin-right: 10px;
     border: 1px solid #7b8092;
     text-decoration: none;
     color: #fff;
-    text-align: center;
-    line-height: 49px;
-    margin-right: 10px;
-
-    &:hover{
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
       color: #ffc925;
       border: 1px solid #ffc925;
     }

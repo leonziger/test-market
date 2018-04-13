@@ -1,11 +1,12 @@
-.main-footer{
+.main-footer {
+  padding-bottom: 16px;
   background: #696969;
 
-  &__top{
+  &__top {
     padding-top: 31px;
     border-bottom: 1px solid #7a7a7a;
 
-    .subscribe{
+    .subscribe {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px;
@@ -21,7 +22,7 @@
         text-transform: uppercase;
       }
 
-      &__content_gray{
+      &__content_gray {
         display: block;
         line-height: 26px;
         font-size: 26px;
@@ -31,12 +32,11 @@
         margin-bottom: 13px;
       }
 
-      &__form{
+      &__form {
         display: flex;
-        //justify-content: space-between;
       }
 
-      &__field{
+      &__field {
         display: inline-flex;
         height: 50px;
         width: 406px;
@@ -48,7 +48,7 @@
         padding-left: 30px;
       }
 
-      &__submit{
+      &__submit {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -62,89 +62,85 @@
         height: 50px;
         width: 170px;
 
-        &:hover{
+        &:hover {
           background-color: #ffc925;
           cursor: pointer;
         }
       }
     }
 
-    .bottom-menu{
+    .bottom-menu {
       margin-top: 26px;
 
-      &__item{
+      &__item {
         margin-bottom: 15px;
       }
-
-      &__link{
+      &__link {
         font-size: 14px;
         color: #fff;
 
-        &:hover{
+        &:hover {
           color: #ffc925;
-        }
-      }
-    }
-  }
-
-  &__bottom{
-
-    .bottom-logo{
-      margin-bottom: 16px;
-      margin-top: 31px;
-      display: flex;
-
-      a{
-        display: block;
-        padding-right: 23px;
-      }
-
-      &__copy{
-        font-size: 12px;
-        color: #a0a9b2;
-        display: block;
-        border-left: 1px solid #7a7a7a;
-        padding: 11px 15px;
-      }
-    }
-
-    .wezom{
-      display: flex;
-      margin-top: 23px;
-      padding-left: 48px;
-
-      &__logo{
-        margin-top: 22px;
-        display: block;
-        margin-right: 19px;
-        width: 42px;
-        height: 15px;
-      }
-
-      &__content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 49px;
-        padding-left: 19px;
-        border-left: 1px solid #7a7a7a;
-
-        &-white{
-          font-size: 12px;
-          display: block;
-          color: #fff;
-        }
-
-        &-gray{
-          font-size: 12px;
-          display: block;
-          color: #a0a9b2;
         }
       }
     }
   }
 }
 
+.bottom-logo {
+  margin-top: 30px;
+  display: flex;
 
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
 
+  a {
+    display: block;
+    padding-right: 23px;
+  }
+  &__copy {
+    font-size: 12px;
+    color: #a0a9b2;
+    display: block;
+    border-left: 1px solid #7a7a7a;
+    padding: 11px 15px;
+  }
+}
 
+.wezom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 23px;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+
+  &__logo {
+    margin-top: 22px;
+    display: block;
+    margin-right: 19px;
+    width: 42px;
+    height: 15px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 49px;
+    padding-left: 19px;
+    border-left: 1px solid #7a7a7a;
+
+    &-white {
+      font-size: 12px;
+      display: block;
+      color: #fff;
+    }
+    &-gray {
+      font-size: 12px;
+      display: block;
+      color: #a0a9b2;
+    }
+  }
+}
