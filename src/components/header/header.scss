@@ -59,10 +59,18 @@
     justify-content: space-around;
 
     &-item{
-      width: 116px;
-      display: block;
+      display: flex;
       position: relative;
+      align-items: flex-start;
+      justify-content: center;
       height: 64px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      @media (max-width: 1200px){
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 
       img.quantity{
         display: block;
