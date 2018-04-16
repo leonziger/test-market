@@ -8,6 +8,11 @@
     background: #606a76;
     padding-left: 8px;
     padding-right: 8px;
+
+    @media (max-width: 1200px){
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__tab {
@@ -30,6 +35,16 @@
     &_active {
       border-bottom: 2px solid #ffc925;
     }
+
+    @media  (max-width: 1390px){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px){
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   &__title {
@@ -41,12 +56,12 @@
 
   &__blocks {
     background-color: #696969;
-    padding: 24px 36px;
+    padding: 24px 36px 27px;
   }
 
   &__innerTabs {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   &__innerTab {
@@ -90,7 +105,7 @@
 
     &Item {
       width: 25%;
-      padding: 10px;
+      padding: 10px 10px 14px 10px;
     }
   }
 
@@ -200,7 +215,6 @@
     display: inline-flex;
     height: 42px;
     margin-left: 10px;
-    margin-right: 10px;
     border-bottom: 1px solid white;
 
     &:hover {

@@ -1,9 +1,25 @@
 .top
-  .container
-    .row
-      .col-3
-        include ../menu/menu
-      .col-9
-        include ../search/search
-        include ../filter/filter
-
+  .top__container
+    .top__menu
+      .top-logo
+        a(href='/')
+          img(src='./images/logo_top.png', alt='Logo')
+      include ../menu/menu
+    .top__main
+      .top__mainHeader
+        .top__mainContacts
+          include ../top-contacts/top-contacts
+        .top__mainActions
+          ul.main-header__actions
+            li.main-header__actions-item
+              img(src='./images/ico_compare.png', alt='')
+              span Сравнение
+            li.main-header__actions-item
+              img(src='./images/ico_favorite.png', alt='')
+              span Избранное
+            li.main-header__actions-item.main-header__actions-item_cart
+              img.quantity(src='./images/ico_basket_quantity.png', alt='')
+              img(src='./images/ico_basket.png', alt='')
+              span Корзина
+      include ../search/search
+      include ../filter/filter
