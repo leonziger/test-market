@@ -1,15 +1,11 @@
 .top
   .top__container
     .top__menu
-      .top-logo
-        a(href='/')
-          img(src='./images/logo_top.png', alt='Logo')
+      include ../top-logo/top-logo
       include ../menu/menu
     .top__main
       .top__mainHeader
-        .top-logo
-          a(href='/')
-            img(src='./images/logo_top.png', alt='Logo')
+        include ../top-logo/top-logo
         .top__mainContacts
           include ../top-contacts/top-contacts
         .top__mainActions

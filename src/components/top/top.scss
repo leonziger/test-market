@@ -30,15 +30,12 @@
     justify-content: space-between;
     margin-bottom: 32px;
 
-    @media(max-width: 992px){
-      margin-bottom: 0;
-    }
-
     .top-logo{
       display: none;
 
       @media(max-width: 992px){
         display: flex;
+        margin-bottom: 0;
       }
     }
 
@@ -48,12 +45,5 @@
 
   }
 
-  .top-logo{
-    padding-top: 5px;
-    min-height: 50px;
-    margin-bottom: 39px;
-  }
 }
-
-
 
