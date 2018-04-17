@@ -6,9 +6,9 @@
 @import '../filter/filter';
 @import '../social-media/social-media';
 
-.main-header {
 
-  &__top{
+.main-header {
+  &__top {
     background: #696969;
     min-height: 50px;
   }
@@ -47,14 +47,13 @@
     display: flex;
     justify-content: space-between;
 
-    @media(max-width: 768px){
+    @media(max-width: 768px) {
       flex-direction: column;
       align-items: center;
     }
   }
 
-  &__actions{
-    height: 57px;
+  &__actions {
     display: flex;
     justify-content: space-around;
 
@@ -79,7 +78,7 @@
         left: 8px;
       }
 
-      img{
+      img {
         display: block;
         position: absolute;
         left: 0;
@@ -89,7 +88,7 @@
         margin: 0 auto;
       }
 
-      span{
+      span {
         display: block;
         color: #3d3d3d;
         font-size: 10px;
@@ -98,12 +97,12 @@
         margin: 42px auto 0;
       }
 
-      &:nth-child(2){
+      &:nth-child(2) {
         border-left: 1px solid #e4e4e4;
         border-right: 1px solid #e4e4e4;
       }
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
