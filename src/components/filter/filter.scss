@@ -3,16 +3,12 @@
 
   &__tabs {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 74px;
     background: #606a76;
     padding-left: 8px;
     padding-right: 8px;
 
-    @media (max-width: 1200px){
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
   }
 
   &__tab {
@@ -106,6 +102,14 @@
     &Item {
       width: 25%;
       padding: 10px 10px 14px 10px;
+
+      @media(max-width: 768px){
+        width: 50%;
+      }
+
+      @media(max-width: 540px){
+        width: 100%;
+      }
     }
   }
 
@@ -209,10 +213,12 @@
 
   &__pricesInputs {
     display: flex;
+    flex-grow: 1;
   }
 
   &__pricesInputGroup {
     display: inline-flex;
+    flex-grow: 1;
     height: 42px;
     margin-left: 10px;
     border-bottom: 1px solid white;
@@ -235,18 +241,28 @@
   &__buttons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 10px;
     background: #696969;
+
+    @media(max-width: 540px){
+      flex-direction: column;
+    }
+  }
+
+  &__reset,
+  &__submit{
+    min-width: 210px;
+
+    @media(max-width: 540px){
+      margin-bottom: 10px;
+    }
   }
 
   &__reset {
     background-color: #ff4800;
     font-size: 14px;
     font-weight: 400;
-
-    &:hover {
-      background: #ff8900;
-    }
 
     &:before {
       display: block;
@@ -261,9 +277,5 @@
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-
-    &:hover {
-      background: #ff8900;
-    }
   }
 }

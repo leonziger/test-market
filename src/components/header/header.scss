@@ -1,13 +1,6 @@
-@import '../top-contacts/top-contacts';
-@import '../menu/menu';
-@import '../nav/nav';
-@import '../search/search';
-@import '../btn/btn';
-@import '../filter/filter';
-@import '../social-media/social-media';
-
-
 .main-header {
+  margin-bottom: 26px;
+
   &__top {
     background: #696969;
     min-height: 50px;

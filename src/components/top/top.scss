@@ -1,12 +1,11 @@
 .top {
   display: flex;
-  padding-top: 36px;
 
   &__menu {
     width: 25%;
     padding-right: 20px;
 
-    @media (max-width: 992px){
+    @media (max-width: 1200px){
       display: none;
     }
   }
@@ -14,6 +13,8 @@
     flex-grow: 1;
   }
   &__mainActions {
+    padding-top: 7px;
+
     @media (max-width: 768px) {
       margin-top: 32px;
     }
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
     @media (max-width: 768px) {
       flex-direction: column;
