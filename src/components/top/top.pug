@@ -1,24 +1,23 @@
-.top
-  .top__container
-    .top__menu
-      include ../top-logo/top-logo
-      include ../menu/menu
-    .top__main
-      .top__mainHeader
-        include ../top-logo/top-logo
-        .top__mainContacts
-          include ../top-contacts/top-contacts
-        .top__mainActions
-          ul.main-header__actions
-            li.main-header__actions-item
-              img(src='./images/ico_compare.png', alt='')
-              span Сравнение
-            li.main-header__actions-item
-              img(src='./images/ico_favorite.png', alt='')
-              span Избранное
-            li.main-header__actions-item.main-header__actions-item_cart
-              img.quantity(src='./images/ico_basket_quantity.png', alt='')
-              img(src='./images/ico_basket.png', alt='')
-              span Корзина
-      include ../search/search
-      include ../filter/filter
+.container.top
+  .top__menu
+    include ../top-logo/top-logo
+    include ../menu/menu
+  .top__main
+    .top__mainHeader
+      .top__mainContacts
+        include ../top-contacts/top-contacts
+      .top__mainActions
+        ul.main-header__actions
+          li.main-header__actions-item
+            img(src='./images/ico_compare.png', alt='')
+            span Сравнение
+          li.main-header__actions-item
+            img(src='./images/ico_favorite.png', alt='')
+            span Избранное
+          li.main-header__actions-item.main-header__actions-item_cart
+            img.quantity(src='./images/ico_basket_quantity.png', alt='')
+            img(src='./images/ico_basket.png', alt='')
+            span Корзина
+
+    include ../search/search
+    include ../filter/filter
