@@ -1,9 +1,27 @@
 .main-header {
   margin-bottom: 26px;
+  background: #696969;
+  min-height: 50px;
 
-  &__top {
-    background: #696969;
-    min-height: 50px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .top-logo{
+      display: none;
+
+      @media(max-width: 1200px){
+        display: block;
+        padding-top: 7px;
+        min-height: 50px;
+        margin: 0;
+      }
+    }
   }
 
   &__auth-btn {
@@ -36,16 +54,6 @@
     }
   }
 
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-
-    @media(max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
   &__actions {
     display: flex;
     justify-content: space-around;
@@ -62,6 +70,11 @@
       @media (max-width: 1200px){
         padding-left: 10px;
         padding-right: 10px;
+      }
+
+      @media (max-width: 768px){
+        padding-left: 25px;
+        padding-right: 25px;
       }
 
       img.quantity{
