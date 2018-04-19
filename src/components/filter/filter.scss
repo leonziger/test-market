@@ -72,6 +72,10 @@
     background:#fff;
     color: #696969;
 
+    @media (max-width: 375px) {
+      min-width: 100px;
+    }
+
     &_active {
       color: #fff;
       background: #ff8900;

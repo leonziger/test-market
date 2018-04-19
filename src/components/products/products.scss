@@ -5,6 +5,11 @@
   padding-top: 28px;
   padding-bottom: 58px;
 
+  .bottomtitle{
+    @media(max-width: 576px){
+      border-bottom: 0;
+    }
+  }
 
   &__title{
     position: relative;
@@ -17,6 +22,14 @@
       color: #3b3b3b;
       font-weight: 400;
       padding-bottom: 11px;
+
+      @media(max-width: 768px){
+        font-size: 28px;
+      }
+
+      @media(max-width: 576px){
+        margin: 0 auto;
+      }
     }
   }
 
@@ -24,6 +37,10 @@
     display: flex;
     justify-content: flex-end;
     align-content: center;
+
+    @media(max-width: 576px){
+      margin-bottom: 10px;
+    }
 
     a{
       text-align: right;
