@@ -1,0 +1,44 @@
+.callback{
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  left:50%;
+  width: 380px;
+  height: 285px;
+  background-color: #ffffff;
+
+  &__form-wrapper{
+    margin: 36px 41px 47px 38px;
+  }
+
+  &__title{
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 33px;
+  }
+
+  &__label{
+    span{
+      display: block;
+      color: #3b3b3b;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__phone{
+    width: 301px;
+    height: 42px;
+    border: 1px solid #d2d2d2;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  &__submit{
+    width: 210px;
+    background-color: #ff8900;
+    margin: 0 auto;
+  }
+}

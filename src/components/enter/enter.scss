@@ -1,0 +1,98 @@
+.enter{
+  display: flex;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width: 757px;
+  height: 433px;
+  background-color: #ffffff;
+  border: 1px solid red;
+
+  &__cabinet{
+    width: 383px;
+  }
+
+  &__form-wrapper{
+    padding: 0 40px;
+    border: 1px solid black;
+  }
+
+  &__title{
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__label{
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__field{
+    width: 301px;
+    height: 42px;
+    border: 1px solid #d2d2d2;
+    background-color: #ffffff;
+  }
+
+  &__checkbox{
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__links{
+    display: flex;
+  }
+
+  &__link{
+    color: #3d3d3d;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-right: 20px;
+  }
+
+  &__submit{
+    width: 210px;
+  }
+
+  &__social-media{
+    width: 370px;
+  }
+
+  .button{
+    margin-top: 24px;
+  }
+
+}
+
+
+.button-facebook {
+  width: 210px;
+  background-color: #3b5998;
+
+  span{
+    margin-left: 15px;
+  }
+}
+
+.button-twitter {
+  width: 210px;
+  background-color: #41abe1;
+
+  span{
+    margin-left: 15px;
+  }
+}
+
+.button-google {
+  width: 210px;
+  background-color: #ea4335;
+
+  span{
+    margin-left: 15px;
+  }
+}

@@ -12,10 +12,16 @@ html
 
     title Responsive Template
   body
-    include components/header/header
-    include components/top/top
-    include components/products/products
-    include components/footer/footer
+    .wrapper
+      include components/header/header
+      include components/top/top
+      include components/products/products
+      include components/footer/footer
+    .callback
+      include components/callback/callback
+    .enter
+      include components/enter/enter
+
     script(src='jquery-1.7.2.min.js')
     //script(src='pixelscreen.js')
     script(src='jselector.js')
