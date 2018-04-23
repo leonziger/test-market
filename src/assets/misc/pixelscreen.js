@@ -1,7 +1,7 @@
 ;$(function(){
 
-    var pxs_url = 'images/test_callback.jpg';
-    var pxs_height = '2413px';
+    var pxs_url = 'img/test_enter.jpg';
+    var pxs_height = '5056px';
     var pxs_opacity_control = true;
 
 //===============================================================================================================================================================================================================
@@ -10,6 +10,7 @@
     $('body').append('<div class="screen_control" style="position: fixed; right: 20px; top: 20px; z-index: 999999;"><button class="screen_switch">On</button> </div>');
 
     $('.screen_switch').bind('click', function(){
+        console.log('ok')
         if($(this).hasClass('active')){
             $('.screen').hide();
             $(this).text('ON').removeClass('active');
