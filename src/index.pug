@@ -11,15 +11,14 @@ html
     script(defer src='js/bundle.js')
     title Responsive Template
   body
-    .wrapper
-      include components/header/header
-      include components/top/top
-      include components/products/products
-      include components/footer/footer
-    .callback
-      include components/callback/callback
-    .enter
-      include components/enter/enter
+    include components/header/header
+    include components/top/top
+    include components/products/products
+    include components/footer/footer
+
+    // Modals
+    include components/callback/callback
+    include components/enter/enter
 
     script(src='jquery-1.7.2.min.js')
     script(src='pixelscreen.js')

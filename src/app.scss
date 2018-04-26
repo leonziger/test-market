@@ -9,27 +9,24 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font: 17px "Roboto";
-    color: black;
-}
-
-
-li{
-    list-style: none;
+body {
+  font: 17px "Roboto";
+  color: black;
 }
 
 
-.container{
-  @media (min-width: 1200px) and (max-width: 1390px) {
-    max-width: 100%;
-  }
-  @media (min-width: 1390px) {
-    max-width: 1360px;
+li {
+  list-style: none;
+}
+
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1390px;
   }
 }
