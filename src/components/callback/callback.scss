@@ -1,44 +1,30 @@
 .callback{
-  display: none;
-  position: absolute;
-  transform: translateX(-50%);
-  left:50%;
-  width: 380px;
-  height: 285px;
-  background-color: #ffffff;
 
-  &__form-wrapper{
-    margin: 29px 41px 47px 38px;
-  }
-
-  &__title{
-    color: #3b3b3b;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  &__form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   &__label{
-    span{
       display: block;
       color: #3b3b3b;
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 10px;
-    }
   }
 
   &__phone{
-    width: 301px;
+    width: 100%;
     height: 42px;
+    padding: 14px;
     border: 1px solid #d2d2d2;
     background-color: #ffffff;
     margin-bottom: 30px;
   }
 
   &__submit{
-    width: 210px;
-    background-color: #ff8900;
-    margin: 0 auto;
+    align-self: center;
+    min-width: 210px;
   }
 }
