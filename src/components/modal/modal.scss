@@ -10,6 +10,10 @@
   background: rgba(0,0,0,0.8);
   z-index: 9999;
 
+  @media(max-width: 870px){
+
+  }
+
   &__title{
     color: #3b3b3b;
     font-size: 24px;
@@ -27,6 +31,7 @@
     position: relative;
     background: #fff;
     padding: 29px 40px 35px;
+    border: 1px solid red;
 
     @media(max-width: 420px){
       width: 80%;
@@ -49,6 +54,19 @@
   &_lg{
     .modal__content{
       max-width: 757px;
+
+      @media (max-width: 870px){
+        max-width: 380px;
+        display: inline-block;
+      }
+    }
+
+    .modal__close{
+      @media (max-width: 870px) {
+        top: 5px;
+        right: 5px;
+        background-color: #000;
+      }
     }
   }
 
