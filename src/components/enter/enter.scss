@@ -1,4 +1,8 @@
 .enter{
+  //height: 432px;
+  margin-top: -42px;
+  margin-left: -65px;
+
   display: flex;
   justify-content: center;
 
@@ -18,6 +22,9 @@
 
   &__field{
     margin: 11px 0 14px;
+    font-size: 14px;
+    color: #9c9c9c;
+    padding-left: 13px;
     width: 100%;
     height: 40px;
     border: 1px solid #d2d2d2;
@@ -30,23 +37,34 @@
     color: #3d3d3d;
     font-size: 14px;
     font-weight: 400;
+  }
 
-    input[type="checkbox"]{
-      display: none;
-    }
 
-    i{
-      width: 16px;
-      height: 16px;
-      border: 1px solid #d2d2d2;
-      background-color: #ffffff;
-      margin-right: 7px;
-    }
+  //разобраться
+  i{
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d2d2d2;
+    background-color: #ffffff;
+    margin-right: 7px;
+  }
+  //разобраться
+  &__span{
+    display: inline-flex;
+    font-size: 14px;
+    color: #9c9c9c;
+  }
+
+
+  input#remembe-me{
+    display: none;
   }
 
   &__links{
     display: flex;
-    margin-top: 24px;
+    margin-top: 21px;
+    margin-bottom: 24px;
   }
 
   &__link{
@@ -54,8 +72,10 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
-    margin-right: 20px;
 
+    &:not(:last-child){
+      margin-right: 20px;
+    }
 
     &:hover{
       color: #ff8900;
@@ -63,7 +83,7 @@
   }
 
   &__submit{
-    width: 210px;
+    min-width: 210px;
     background-color: #afb9c6;
 
     &:hover{
@@ -73,35 +93,35 @@
 
   &__socials{
     width: 100%;
+    padding-top: 24px;
   }
 
-  .button{
+  &__social-btn{
+    width: 100%;
     margin-top: 24px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &-icon{
+      margin-right: 15px;
+    }
+
+    &_facebook {
+      background-color: #3b5998;
+    }
+
+    &_twitter {
+      background-color: #41abe1;
+    }
+
+    &_google {
+      background-color: #ea4335;
+    }
   }
 
 }
 
 
-.button-facebook {
-  background-color: #3b5998;
 
-  span{
-    margin-left: 15px;
-  }
-}
-
-.button-twitter {
-  background-color: #41abe1;
-
-  span{
-    margin-left: 15px;
-  }
-}
-
-.button-google {
-  background-color: #ea4335;
-
-  span{
-    margin-left: 15px;
-  }
-}

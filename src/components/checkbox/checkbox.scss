@@ -1,0 +1,53 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__input {
+    display: none;
+
+    ~ .checkbox__icon {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+      margin-right: 2px;
+      background: #fff;
+      border: 1px solid #d2d2d2;
+      cursor: pointer;
+      transition: 0.2s;
+      overflow: hidden;
+
+      &:before {
+        content: '\f00c';
+        display: none;
+        font-family: 'Font Awesome 5 Solid';
+      }
+
+      svg{
+        font-size: 0;
+        transition: 0.2s;
+      }
+    }
+
+    &:checked ~ .checkbox__icon {
+      svg{
+        font-size: 15px;
+        color: #d2d2d2;
+      }
+    }
+
+  }
+
+  &__icon label {
+    cursor: pointer;
+  }
+
+  &__label {
+    padding-left: 6px;
+    line-height: 1.2;
+  }
+
+}

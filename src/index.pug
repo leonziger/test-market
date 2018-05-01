@@ -7,20 +7,24 @@ html
     link(rel='stylesheet', href='css/style.css')
     //script(defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
     //script(defer src='https://cdn.jsdelivr.net/npm/jquery-pixel-perfect@1.0.0/lib/jquery-pixel-perfect.min.js')
+    script.
+      var FontAwesomeConfig = {
+        searchPseudoElements: true
+      };
     script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
     script(defer src='js/bundle.js')
     title Responsive Template
   body
-    include components/header/header
-    include components/top/top
-    include components/products/products
-    include components/footer/footer
+    //include components/header/header
+    //include components/top/top
+    //include components/products/products
+    //include components/footer/footer
 
     // Modals
     //include components/callback/callback
     include components/enter/enter
 
     script(src='jquery-1.7.2.min.js')
-    //script(src='pixelscreen.js')
+    script(src='pixelscreen.js')
     script(src='jselector.js')
     script(src='scripts.js')

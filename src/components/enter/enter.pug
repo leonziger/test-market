@@ -1,3 +1,6 @@
+include ../checkbox/checkbox
+
+
 .modal.modal_lg
   .modal__content.modal__content_noGutters_horizontal.enter
     .modal__close
@@ -5,28 +8,27 @@
       form.enter__form
         .modal__title Вход в личный кабинет
         label.enter__label Ваш email
-        input.enter__field
-        label.enter__label
-          span Пароль
-          input.enter__field(type='password')
-        label.enter__checkbox(for='remembe-me')
-        input#remembe-me(type='checkbox')
-        label
-          i
-          span  Запомнить меня
+        input.enter__field(placeholder='Введите e-mail...')
+        label.enter__label Пароль
+        input.enter__field(type='password' placeholder='Введите пароль...')
+        //label.enter__checkbox(for='remembe-me')
+        //input#remembe-me(type='checkbox')
+        //i
+        //span.enter__span  Запомнить меня
+        +checkbox({ id:'remembe-me' }) Запомнить меня
         .enter__links
           a.enter__link(href='#') Забыли пароль?
           a.enter__link(href='#') Регистрация
         button.button.enter__submit Войти в личный кабинет
     .modal__content.modal__content_noGutters_vertical
+      .modal__title Войти с помощью
       .enter__socials
-        .modal__title Войти с помощью
-        button.button.button_block.button-facebook
-          i.fab.fa-facebook-f
-          span Facebook
-        button.button.button_block.button-twitter
-          i.fab.fa-twitter
-          span Twitter
-        button.button.button_block.button-google
-          i.fab.fa-google
-          span Google
+        button.button.enter__social-btn.enter__social-btn_facebook
+          i.fab.fa-facebook-f.enter__social-btn-icon
+          | Facebook
+        button.button.enter__social-btn.enter__social-btn_twitter
+          i.fab.fa-twitter.enter__social-btn-icon
+          | Twitter
+        button.button.enter__social-btn.enter__social-btn_google
+          i.fab.fa-google.enter__social-btn-icon
+          | Google
