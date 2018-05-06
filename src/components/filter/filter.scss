@@ -57,7 +57,23 @@
 
   &__innerTabs {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 13px;
+
+    &>div,
+    &>input{
+      display: none;
+    }
+
+    &>input:nth-of-type(1):checked ~ div:nth-of-type(1),
+    &>input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+      display: block;
+    }
+
+    &>input[type="radio"]:checked + label{
+      color: #fff;
+      background: #ff8900;
+    }
   }
 
   &__innerTab {
@@ -65,7 +81,7 @@
     justify-content: center;
     align-items: center;
     min-width: 134px;
-    min-height: 44px;
+    height: 44px;
     padding: 5px 12px;
     border: 2px solid #fff;
     font-size: 14px;
@@ -88,6 +104,7 @@
     }
   }
 
+
   &__innerBlock {
     display: none;
 
@@ -97,9 +114,11 @@
   }
 
   &__selects {
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 13px;
     margin-left: -10px;
     margin-right: -10px;
 

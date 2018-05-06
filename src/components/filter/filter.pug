@@ -23,13 +23,17 @@
 
   ul.filter__blocks
     li.filter__block
-      ul.filter__innerTabs
-        li.filter__innerTab Tab 1
-        li.filter__innerTab.filter__innerTab_active Tab 2
+      div.filter__innerTabs
+        //li.filter__innerTab Tab 1
+        //li.filter__innerTab.filter__innerTab_active Tab 2
+        input#tab1(type='radio', name='tabs', checked='checked')
+        label.filter__innerTab(for='tab1') Tab 1
+        input#tab2(type='radio', name='tabs')
+        label.filter__innerTab(for='tab2') Tab 2
 
-      ul.filter__innerBlocks
-        li.filter__innerBlock
-          form
+
+        div.filter__innerBlock
+          form.filter__innerBlocks
             .filter__selects
               .filter__selectsItem
                 .filter__selector
@@ -90,8 +94,8 @@
               button.button.filter__submit
                 span Применить фильтр
 
-        li.filter__innerBlock.filter__innerBlock_active
-          form
+        div.filter__innerBlock.filter__innerBlock_active
+          form.filter__innerBlocks
             .filter__selects
               .filter__selectsItem
                 .filter__selector
