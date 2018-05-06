@@ -52,7 +52,7 @@ a{
   text-decoration: none;
 
 &:after{
-   content: url('/images/arrow.png');
+   content: url('../images/arrow.png');
    display: inline-block;
    padding-top: 2px;
    position: absolute;

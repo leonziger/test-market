@@ -31,10 +31,10 @@
     position: relative;
     background: #fff;
     padding: 29px 40px 35px;
-    border: 1px solid red;
 
     @media(max-width: 420px){
       width: 80%;
+      padding: 29px 40px 29px;
     }
 
     &_noGutters{
@@ -59,13 +59,20 @@
         max-width: 380px;
         display: inline-block;
       }
+
+      @media (max-width: 420px){
+        width: 90%;
+      }
     }
 
     .modal__close{
       @media (max-width: 870px) {
-        top: 5px;
-        right: 5px;
-        background-color: #000;
+        top: 12px;
+        right: 8px;
+
+        &:before, &:after{
+          background: #000;
+        }
       }
     }
   }
@@ -73,43 +80,49 @@
 
   &__close {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     position: absolute;
-    top: -50px;
-    right: -40px;
+    top: -42px;
+    right: -38px;
     cursor: pointer;
+    z-index: 10;
 
     @media (max-width: 540px) {
       top: 5px;
       right: 5px;
-      background-color: #000;
     }
 
-    &:before,
-    &:after {
-      content: '';
+    &:before{
+      content:'';
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1px;
-      display: block;
-      height: 40px;
+      left:0;
+      right:0;
+      top: 0;
+      height: 1px;
+      width: 37px;
       background: #fff;
-      transition: .3s;
-    }
-
-    &:before {
+      transform-origin: top left;
       transform: rotate(45deg);
     }
 
-    &:after {
+    &:after{
+      content:'';
+      position: absolute;
+      left:0;
+      right:0;
+      bottom: 0;
+      height: 1px;
+      width: 37px;
+      background: #fff;
       transform: rotate(-45deg);
+      transform-origin: bottom left;
     }
 
-    &:hover &:before,
-    &:hover &:after{
-      background: #ff8900;
+    &:hover{
+      &:before, &:after{
+        background: #ff8900;
+      }
     }
 
   }

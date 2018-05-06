@@ -1,13 +1,17 @@
 .enter{
-  ////height: 432px;
-  //margin-top: -42px;
-  //margin-left: -65px;
+  //height: 432px;
+  margin-top: -51px;
+  margin-left: -65px;
 
   display: flex;
   justify-content: center;
 
   &__form{
     width: 300px;
+
+    @media (max-width: 420px){
+      width: 100%;
+    }
   }
 
   &__delimiter{
