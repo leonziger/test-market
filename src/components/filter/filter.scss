@@ -114,9 +114,9 @@
   }
 
   &__selects {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     margin-top: 13px;
     margin-left: -10px;
@@ -124,6 +124,7 @@
 
     &Item {
       width: 25%;
+      min-width: 222px;
       padding: 10px 10px 14px 10px;
 
       @media(max-width: 768px){
