@@ -1,9 +1,9 @@
 include ../checkbox/checkbox
 
 
-.modal.modal_lg
+#modal-enter.modal.modal_lg
   .modal__content.modal__content_noGutters_horizontal.enter
-    .modal__close
+    .modal__close(onclick="closeTask('modal-enter')")
     .modal__content.modal__content_noGutters_vertical.enter__delimiter
       form.enter__form
         .modal__title Вход в личный кабинет
