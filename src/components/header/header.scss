@@ -28,9 +28,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: 0;
+    border: 0;
     background-color: #ff8900;
-    width: 125px;
-    height: 50px;
+    padding: 5px 36px;
+    min-height: 50px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:before{
+      margin-top: -1px;
+      margin-right: 8px;
+      content:url(../images/ico_entrance.png);
+    }
 
     @media(max-width: 992px){
       display: none;
@@ -40,25 +51,9 @@
       display: flex;
     }
 
-    a {
-      display: flex;
-      text-align: left;
-      padding: 2px;
-      font-size: 12px;
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-
-      &:before{
-        margin-top: -1px;
-        margin-right: 8px;
-        content:url(../images/ico_entrance.png);
-      }
-    }
-
     &:hover{
-      background-color: #ffc925;
       cursor: pointer;
+      background-color: #ffc925;
     }
   }
 
