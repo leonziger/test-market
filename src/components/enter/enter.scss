@@ -6,12 +6,14 @@
   display: flex;
   justify-content: center;
 
-  &__form{
-    width: 300px;
+  @media (max-width: 870px){
+    max-width: 320px;
+    flex-direction: column;
+  }
 
-    @media (max-width: 420px){
-      width: 100%;
-    }
+  &__form{
+    max-width: 300px;
+    width: 100%;
   }
 
   &__delimiter{
@@ -47,24 +49,6 @@
     font-weight: 400;
   }
 
-
-  //разобраться
-  i{
-    display: inline-flex;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #d2d2d2;
-    background-color: #ffffff;
-    margin-right: 7px;
-  }
-  //разобраться
-  &__span{
-    display: inline-flex;
-    font-size: 14px;
-    color: #9c9c9c;
-  }
-
-
   input#remembe-me{
     display: none;
   }
@@ -80,6 +64,10 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
+
+    @media(max-width:420px){
+    font-size: 12px;
+  }
 
     &:not(:last-child){
       margin-right: 20px;
@@ -122,6 +110,10 @@
       width: 30%;
       display: inline-flex;
       margin-top: 0;
+
+      span{
+        display: none;
+      }
     }
 
     &:first-child{
@@ -132,7 +124,8 @@
       margin-right: 15px;
 
       @media (max-width: 870px){
-        margin-right: 5px;
+        margin-right: 0;
+        font-size: 20px;
       }
     }
 
