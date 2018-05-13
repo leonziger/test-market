@@ -2,4 +2,18 @@
   padding-top: 15px;
   min-height: 50px;
   margin-bottom: 47px;
+
+
+  @media (max-width: 420px){
+    display: none;
+  }
+
+  &-mobi{
+    padding-top: 7px;
+    display: none;
+
+    @media (max-width: 420px){
+      display: block;
+    }
+  }
 }
