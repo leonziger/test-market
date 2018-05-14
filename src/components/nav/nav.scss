@@ -2,11 +2,6 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: 992px){
-    display: none;
-    flex-direction: column;
-  }
-
   &__item{
     display: block;
 

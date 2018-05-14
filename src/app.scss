@@ -1,4 +1,3 @@
-@import '../node_modules/select2/src/scss/core';
 @import './assets/styles/index';
 @import './components/index';
 
@@ -21,10 +20,4 @@ body {
 
 li {
   list-style: none;
-}
-
-.container {
-  @media (min-width: 1200px) {
-    max-width: 1390px;
-  }
 }

@@ -17,10 +17,32 @@
     }
   }
 
-  &__nav {
+  &__container {
     display: flex;
     justify-content: space-between;
     position: relative;
+  }
+
+  &__nav{
+    @media(max-width: 992px){
+      position: absolute;
+      top: auto;
+      right: 15px;
+      bottom: 100%;
+      background: #000;
+      transition: .4s;
+    }
+
+    .nav{
+      @media (max-width: 992px){
+        flex-direction: column;
+      }
+    }
+    &.is-open{
+      top: 100%;
+      bottom: auto;
+      z-index: 5;
+    }
   }
 
   &__auth-btn {

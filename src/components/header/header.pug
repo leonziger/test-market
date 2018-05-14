@@ -1,6 +1,7 @@
 header.main-header
-  .container.main-header__nav
+  .container.main-header__container
     include ../top-logo/top-logo
-    include ../nav/nav
+    .main-header__nav
+      include ../nav/nav
     button.main-header__auth-btn(onclick="showTask('modal-enter')") Вход
     include ../menu-toggle/menu-toggle
