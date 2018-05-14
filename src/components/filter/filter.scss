@@ -1,5 +1,10 @@
 .filter {
   margin-top: 20px;
+  
+  &__select {
+    width: 100%;
+    background: #000000;
+  }
 
   &__tabs {
     display: flex;

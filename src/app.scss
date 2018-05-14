@@ -1,12 +1,12 @@
+@import '../node_modules/select2/src/scss/core';
 @import './assets/styles/index';
 @import './components/index';
 
-::placeholder{
-  font-family: 'Roboto';
+
+::placeholder {
   font-size: 14px;
   color: #929292;
 }
-
 
 * {
   margin: 0;
@@ -19,11 +19,9 @@ body {
   color: black;
 }
 
-
 li {
   list-style: none;
 }
-
 
 .container {
   @media (min-width: 1200px) {
