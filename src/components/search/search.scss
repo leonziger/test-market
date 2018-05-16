@@ -56,6 +56,20 @@
       height: 56px;
     }
 
+    .select2{
+
+      &-selection--single{ //незакрытый селект
+        background-color: transparent;
+        border: 0;
+      }
+
+      &-search--dropdown{
+        display: block;
+        margin-top: 50px;
+      }
+
+    }
+
     //.jselector {
     //  display: flex;
     //

@@ -39,24 +39,101 @@
       flex-direction: column-reverse;
     }
     // это левое меню в корзине
-    .menu__header{
-      display: none;
-      min-width: 160px;
+    .left-menu{
+      &__header{
+        border: 0;
+        outline: 0;
+        display: none;
+        min-width: 160px;
+        cursor: pointer;
+        height: 56px;
+        background: #ffa900;
 
-      @media (max-width: 1200px) {
-        display: flex;
+        &:hover{
+          opacity: .7;
+        }
+
+        @media (max-width: 1200px) {
+          display: flex;
+        }
+
+        @media (max-width: 440px){
+          margin-top: 20px;
+          width: 100%;
+        }
       }
 
-      @media (max-width: 440px){
-        margin-top: 20px;
-        width: 100%;
-      }
-    }
+      &__toggle{
+        position: relative;
+        height: inherit;
+        display: block;
+        width: 60px;
+        background: #db7200;
 
-    .menu__title{
-      padding: 16px 23px;
+        span{
+          position: absolute;
+          left:10px;
+          right:10px;
+          top: 0; bottom: 0;
+          height: 4px;
+          margin: auto;
+          background: #fff;
+        }
+
+        &:before{
+          content:'';
+          position: absolute;
+          left:10px;
+          right:20px;
+          top: 15px;
+          height: 4px;
+          background: #fff;
+          transition: .4s;
+        }
+
+        &:after{
+          content:'';
+          position: absolute;
+          left:10px;
+          right:20px;
+          bottom: 15px;
+          height: 4px;
+          background: #fff;
+          transition: .4s;
+        }
+
+        &_active{
+          right:0;
+
+          span{
+            opacity:0;
+          }
+
+          &:before{
+            left: 5px;
+            transform-origin: top left;
+            transform: rotate(45deg);
+            width: 39px;
+          }
+
+          &:after{
+            left: 5px;
+            transform: rotate(-45deg);
+            transform-origin: bottom left;
+            width: 39px;
+          }
+        }
+      }
+
+      &__title{
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: 16px 23px;
+      }
     }
   }
+
   &__mainHeader {
     display: flex;
     justify-content: space-between;
