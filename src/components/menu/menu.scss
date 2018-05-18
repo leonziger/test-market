@@ -2,17 +2,17 @@
   padding-right: 0;
 
   @media (max-width: 1200px){
-    //padding-top: 10px;
-    //width: 100vw;
-    //max-width: 320px;
-    //position: fixed;
-    //top: 50px;
-    //bottom: 0;
-    //right: 0;
-    //background: #696969;
-    //opacity: 0.98;
-    //transform: translateX(800px);
-    //transition: .4s;
+    padding-top: 10px;
+    width: 100vw;
+    max-width: 320px;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    background: #696969;
+    opacity: 0.98;
+    transform: translateX(800px);
+    transition: .4s;
 
     &.is-open{
       z-index: 5;

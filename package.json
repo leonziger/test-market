@@ -44,7 +44,8 @@
     "font-awesome": "^4.7.0",
     "gulp-sass": "^3.2.1",
     "jquery": "^3.3.1",
-    "select2": "^4.0.6-rc.1"
+    "select2": "^4.0.6-rc.1",
+    "vex-js": "^4.1.0"
   },
   "description": "1. Run `npm install` to install dependencies.\r 2. Run `npm start` to start the development server.  \r    It should automatically open the client in your browser when ready.",
   "main": "gulpfile.js",

@@ -1,30 +1,30 @@
 include ../checkbox/checkbox
 
 
-#modal-enter.modal
-  .modal__content.modal__content_lg.modal__content_noGutters_horizontal.enter
-    .modal__close(onclick="closeTask('modal-enter')")
-    .modal__content.modal__content_noGutters_vertical.enter__delimiter
-      form.enter__form
-        .modal__title Вход в личный кабинет
-        label.enter__label Ваш email
-        input.enter__field(placeholder='Введите e-mail...')
-        label.enter__label Пароль
-        input.enter__field(type='password' placeholder='Введите пароль...')
-        +checkbox({ id:'remembe-me' }) Запомнить меня
-        .enter__links
-          a.enter__link(href='#') Забыли пароль?
-          a.enter__link(href='#') Регистрация
-        button.button.enter__submit Войти в личный кабинет
-    .modal__content.modal__content_noGutters_vertical
-      .modal__title Войти с помощью
-      .enter__socials
-        button.button.enter__social-btn.enter__social-btn_facebook
-          i.fab.fa-facebook-f.enter__social-btn-icon
-          span Facebook
-        button.button.enter__social-btn.enter__social-btn_twitter
-          i.fab.fa-twitter.enter__social-btn-icon
-          span Twitter
-        button.button.enter__social-btn.enter__social-btn_google
-          i.fab.fa-google.enter__social-btn-icon
-          span Google
+script(type='text/html', data-modal='enter')
+  #modal-enter.modal
+    .modal__content.modal__content_lg.modal__content_noGutters_horizontal.enter
+      .modal__content.modal__content_noGutters_vertical.enter__delimiter
+        form.enter__form
+          .modal__title Вход в личный кабинет
+          label.enter__label Ваш email
+          input.enter__field(placeholder='Введите e-mail...')
+          label.enter__label Пароль
+          input.enter__field(type='password' placeholder='Введите пароль...')
+          +checkbox({ id:'remembe-me' }) Запомнить меня
+          .enter__links
+            a.enter__link(href='#') Забыли пароль?
+            a.enter__link(href='#') Регистрация
+          button.button.enter__submit Войти в личный кабинет
+      .modal__content.modal__content_noGutters_vertical
+        .modal__title Войти с помощью
+        .enter__socials
+          button.button.enter__social-btn.enter__social-btn_facebook
+            i.fab.fa-facebook-f.enter__social-btn-icon
+            span Facebook
+          button.button.enter__social-btn.enter__social-btn_twitter
+            i.fab.fa-twitter.enter__social-btn-icon
+            span Twitter
+          button.button.enter__social-btn.enter__social-btn_google
+            i.fab.fa-google.enter__social-btn-icon
+            span Google

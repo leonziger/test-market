@@ -5,25 +5,16 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
     link(rel='stylesheet', href='css/style.css')
-    //script(defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
-    //script(defer src='https://cdn.jsdelivr.net/npm/jquery-pixel-perfect@1.0.0/lib/jquery-pixel-perfect.min.js')
     script.
       var FontAwesomeConfig = {
         searchPseudoElements: true
       };
 
-    script.
-      function showTask(block1) {
-        document.getElementById(block1).style.display = 'flex';
-      }
-      function closeTask(block1) {
-        document.getElementById(block1).style.display = 'none';
-      }
     script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
     script(defer src='js/bundle.js')
     title Test - Responsive Template from Wezom
   body
-    include components/header/header
+    include components/main-header/main-header
     include components/top/top
     include components/products/products
     include components/footer/footer
@@ -31,8 +22,3 @@ html
     // Modals
     include components/callback/callback
     include components/enter/enter
-
-    //script(src='jquery-1.7.2.min.js')
-    //script(src='pixelscreen.js')
-    //script(src='jselector.js')
-    //script(src='scripts.js')

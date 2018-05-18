@@ -1,8 +1,8 @@
-#modal-callback.modal
-  .modal__content.callback
-    .modal__close(onclick="closeTask('modal-callback')")
-    .modal__title Перезвоните мне
-    form.callback__form
-      label.callback__label(for='callback-phone') Номер телефона
-      input#callback-phone.callback__phone(placeholder='+38(0__) ___ - __ - __')
-      button.button.callback__submit Перезвоните мне
+script(type='text/html', data-modal='callback')
+  #modal-callback.modal
+    .modal__content.callback
+      .modal__title Перезвоните мне
+      form.callback__form
+        label.callback__label(for='callback-phone') Номер телефона
+        input#callback-phone.callback__phone(placeholder='+38(0__) ___ - __ - __')
+        button.button.callback__submit Перезвоните мне
