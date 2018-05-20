@@ -7,10 +7,12 @@
       .top__mainContacts
         include ../top-contacts/top-contacts
       .top__mainActions
-        button.left-menu__header(data-target='.menu')
-          .left-menu__toggle
-            span
-          .left-menu__title Меню
+        .left-menu
+          button.left-menu__header(data-target='.menu')
+            .left-menu__toggle
+              span
+            .left-menu__title Меню
+          include ../menu/menu
         ul.main-header__actions
           li.main-header__actions-item
             img(src='./images/ico_compare.png', alt='')
