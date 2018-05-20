@@ -42,14 +42,17 @@
     height: 2px;
     margin: auto;
     background: #fff;
+    opacity:0;
   }
 
   &:before{
     content: '';
     position: absolute;
-    left: 23px;
-    right: 27px;
-    top: 23px;
+    left: 22px;
+    top: 19px;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    width: 25px;
     height: 2px;
     background: #fff;
     transition: .4s;
@@ -58,37 +61,17 @@
   &:after{
     content:'';
     position: absolute;
-    left: 23px;
-    right: 30px;
-    bottom: 23px;
+    left: 22px;
+    top: 36px;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 25px;
     height: 2px;
     background: #fff;
     transition: .4s;
   }
 
-  &_active{
-    right:0;
 
-    span{
-      opacity:0;
-    }
-
-    &:before{
-      left: 22px;
-      top: 19px;
-      transform-origin: top left;
-      transform: rotate(45deg);
-      width: 25px;
-    }
-
-    &:after{
-      left: 22px;
-      top: 36px;
-      transform: rotate(-45deg);
-      transform-origin: bottom left;
-      width: 25px;
-    }
-  }
 }
 
 &__title {
