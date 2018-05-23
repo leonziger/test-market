@@ -52,7 +52,7 @@
 
   &__blocks {
     background-color: #696969;
-    padding: 24px 36px 27px;
+    padding: 24px 36px 15px;
   }
 
   &__innerTabs {
@@ -156,11 +156,14 @@
         align-items: center;
         height: 40px;
         background: #fff;
+        font-size: 14px;
+        color: #9c9c9c !important;
+        padding-left: 15px !important;
       }
 
       &-selection__arrow{
         top: 7px!important;
-        right: 7px!important;
+        right: 18px!important;
 
         b{
           border-color: #ff4800 transparent transparent transparent !important;

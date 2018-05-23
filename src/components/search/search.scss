@@ -41,7 +41,7 @@
     align-self: center;
     height: 40px;
     padding: 7px;
-    margin-right: 25px;
+    margin-right: 16px;
     border-left: 1px solid #dddddd;
     position: relative;
 
@@ -56,19 +56,65 @@
       height: 56px;
     }
 
-    .select2{
+    .select2-container{
+      width: auto !important;
 
-      &-selection--single{ //незакрытый селект
-        background-color: transparent;
-        border: 0;
+      .select2-selection__arrov{
+        b{
+          height: 9px !important;
+          width: 13px !important;
+          border: 0 none !important;
+          margin: auto !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+        }
       }
 
-      &-search--dropdown{
-        display: block;
-        margin-top: 50px;
+      .select2-selection__rendered{
+        font-size: 14px !important;
       }
 
+      .select2-dropdown{
+        margin-top: 2px;
+        bottom: 0 none;
+        background: red;
+
+        .select2-results__option{
+          background: #fff;
+          font-size: 14px !important;
+          line-height: 16px;
+
+          .select2-results__option--higlighted{
+            color: aqua;
+
+          }
+        }
+      }
     }
+
+    //.select2{
+    //
+    //  &-container{
+    //    width: auto !important;
+    //  }
+    //
+    //  &-selection--single{ //незакрытый селект
+    //    background-color: transparent;
+    //    border: 0;
+    //  }
+    //
+    //  &-selection__rendered{
+    //    font-size: 14px !important;
+    //  }
+    //
+    //  &-search--dropdown{
+    //    display: block;
+    //    margin-top: 50px;
+    //  }
+    //
+    //}
 
     //.jselector {
     //  display: flex;
@@ -153,7 +199,7 @@
   }
 
   &__submit {
-    border:none;
+    border: none;
     outline: none;
     background: #ff8900;
     font-family: "Roboto";
