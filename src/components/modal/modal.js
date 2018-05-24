@@ -14,6 +14,18 @@ $('[data-modal-toggle]').click(function (e) {
 
   vex.open({
     unsafeContent: modal.html(),
-    closeClassName: 'modal__close'
+    closeClassName: 'modal__close',
+    afterOpen: ( ) => {
+      $('.enter__form').validate({
+        messages: {
+          email:{
+            email: 'Введите правильный e-mail',
+            required: 'Это обязательное поле!'
+          }
+        }
+      });
+
+      console.log($('.enter__form'));
+    }
   });
 });
