@@ -8,7 +8,12 @@ script(type='text/html', data-modal='enter')
         form.enter__form
           .modal__title Вход в личный кабинет
           label.enter__label Ваш email
-          input.enter__field(type='email' name='email' required placeholder='Введите e-mail...')
+          input.enter__field(
+            type='email'
+            name='email'
+            required
+            placeholder='Введите e-mail...'
+          )
           label.enter__label Пароль
           input.enter__field(type='password' name='password' required placeholder='Введите пароль...')
           +checkbox({ id:'remembe-me' }) Запомнить меня
