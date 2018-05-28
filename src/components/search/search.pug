@@ -1,5 +1,12 @@
 form.search(action='#')
-  input.search__field(name='main_search' minlength='2' autocomplete='off' required placeholder='Поиск по сайту')
+  input.search__field(
+    name='main_search'
+    minlength='2'
+    autocomplete='off'
+    required
+    placeholder='Поиск по сайту'
+    data-msg-container='.search__error'
+  )
   .search__error.search__error_mobile
   .search__actions
     .search__select

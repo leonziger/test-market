@@ -1,12 +1,12 @@
 import $ from 'jquery';
 import vex from 'vex-js';
+import callback from '../callback/callback';
 
 
-$('[data-modal-toggle]').click(function (e) {
+$('.top-contacts__button').click(function (e) {
   e.preventDefault();
 
-  const modalName = $(this).data('modal-toggle');
-  const modal = $(`[data-modal=${modalName}]`);
+  const modal = $(`[data-modal=callback]`);
 
   if (!modal.length) {
     return console.error('Modal is not exist!');
