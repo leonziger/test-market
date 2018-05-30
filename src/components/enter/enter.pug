@@ -11,11 +11,18 @@ script(type='text/html', data-modal='enter')
           input.enter__field(
             type='email'
             name='email'
+            autocomplete='off'
             required
             placeholder='Введите e-mail...'
           )
           label.enter__label Пароль
-          input.enter__field(type='password' name='password' required placeholder='Введите пароль...')
+          input.enter__field(
+            type='password'
+            name='password'
+            minlength='4'
+            required
+            placeholder='Введите пароль...'
+          )
           +checkbox({ id:'remembe-me' }) Запомнить меня
           .enter__links
             a.enter__link(href='#') Забыли пароль?

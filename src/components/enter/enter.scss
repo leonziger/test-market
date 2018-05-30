@@ -16,6 +16,17 @@
     width: 100%;
   }
 
+  .error{//.error from validator.js plugin
+    color: red;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+    @media(max-width: 867px){
+      padding: 0 5px;
+    }
+  }
+
   &__delimiter{
     border-right: 1px solid #dbdbdb;
 
