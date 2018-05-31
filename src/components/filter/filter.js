@@ -5,7 +5,8 @@ import select2 from 'select2/dist/js/select2.full';
 select2($);
 
 $('.filter__selector select').select2({
-  minimumResultsForSearch: -1
+  minimumResultsForSearch: -1,
+  dropdownCssClass: 'filter__selectorDropdown'
 });
 
 $('.filter__reset').click(function () {
