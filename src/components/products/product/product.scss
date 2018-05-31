@@ -203,7 +203,7 @@
   &__buy{
     margin: 22px auto 0;
     min-width: 210px;
-    background: url('../images/product/buy_button_gradient.png');
+    background: linear-gradient(to right, #ff8500, #ffae00);
 
     span{
       padding-left: 15px;
