@@ -14,6 +14,9 @@ $('.top-contacts__button').click(function (e) {
 
   vex.open({
     unsafeContent: modal.html(),
-    closeClassName: 'modal__close'
+    closeClassName: 'modal__close',
+    afterOpen: function () {
+      callback.mask();
+    }
   });
 });

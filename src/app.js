@@ -8,3 +8,4 @@ import './components/top-contacts/top-contacts';
 import './components/main-header/main-header';
 import './components/search/search';
 import './components/filter/filter';
+import './components/scrollup/scrollup';

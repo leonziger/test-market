@@ -17,7 +17,7 @@ $('.main-header__auth-btn').click(function (e) {
   vex.open({
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
-    afterOpen: ( ) => {
+    afterOpen() {
       validator = enter.validate();
     },
     afterClose() {

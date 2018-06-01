@@ -16,6 +16,23 @@
   color: #fff;
 }
 
+::placeholder {
+  font-size: 14px;
+  color: #929292;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+
+
 html,
 body {
   min-height: 100%;
@@ -23,7 +40,7 @@ body {
 }
 
 html {
-  font: 400 16px/1.5 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font: 400 17px/1.5 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 @media (max-width: 768px) {
