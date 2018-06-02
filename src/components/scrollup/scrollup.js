@@ -1,17 +1,17 @@
 import $ from 'jquery';
 
 
-$('#scrollup').hide();
+$('.scrollup').hide();
 
 $(window).scroll(function (){
   if ($(this).scrollTop() > 0){
-    $('#scrollup').fadeIn();
+    $('.scrollup').fadeIn();
   } else{
-    $('#scrollup').fadeOut();
+    $('.scrollup').fadeOut();
   }
 });
 
-$('#scrollup').click(function (){
+$('.scrollup').click(function (){
   $('body,html').animate({
     scrollTop:0
   }, 800);
