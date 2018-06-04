@@ -14,3 +14,12 @@ $('.filter__reset').click(function () {
     return $(this).prop('defaultSelected');
   }).trigger('change');
 });
+
+$('.filter__innerBlocks').validate({
+  rules: {
+    field: {
+      required: true,
+      number: true
+    }
+  }
+});
