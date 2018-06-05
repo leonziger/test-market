@@ -1,9 +1,14 @@
-import IMask from 'imask';
+import { maskInput } from 'vanilla-text-mask';
+
+
+const phoneMask = ['+','3','8', '0', '(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
 
 export default {
   mask() {
-    const phone = new IMask(document.querySelector('.callback__phone'), {
-      mask: '+{38}(000)000-00-00'
+    return maskInput({
+      inputElement: document.querySelector('.callback__phone'),
+      mask: phoneMask,
+      showMask: true
     });
   }
 };

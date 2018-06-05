@@ -17,3 +17,10 @@ $.validator.setDefaults({
   },
   success: 'valid'
 });
+
+
+$('[type=reset]').click(function () {
+  $(this).closest('form').find('select option').prop('selected', function () {
+    return $(this).prop('defaultSelected');
+  }).trigger('change');
+});
