@@ -49,7 +49,9 @@
     "jquery-validation": "^1.17.0",
     "jquery.customSelect": "^0.5.2",
     "select2": "^4.0.6-rc.1",
+    "text-mask-addons": "^3.7.2",
     "toastr": "^2.1.4",
+    "vanilla-text-mask": "^5.1.1",
     "vex-js": "^4.1.0"
   },
   "description": "1. Run `npm install` to install dependencies.\r 2. Run `npm start` to start the development server.  \r    It should automatically open the client in your browser when ready.",

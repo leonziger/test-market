@@ -1,4 +1,4 @@
-import './components/validator/validator';
+import './components/form/form';
 import './components/menu-toggle/menu-toggle';
 import './components/top/top';
 import './components/modal/modal';
