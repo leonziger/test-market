@@ -207,6 +207,8 @@
     margin: 22px auto 0;
     min-width: 210px;
     background: linear-gradient(to right, #ff8500, #ffae00);
+    opacity: .8;
+    transition: .2s;
 
     span{
       padding-left: 15px;
@@ -216,8 +218,7 @@
     }
 
     &:hover{
-      background: url('../images/product/buy_button_gradient_hover.png');
-      cursor: pointer;
+      opacity: 1;
     }
   }
 
