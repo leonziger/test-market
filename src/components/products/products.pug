@@ -22,13 +22,13 @@
         .product__preview
           ul.product__labels
             li.product__label
-              img.product__labelIcon(src='./images/product/sun.png')
+              .product__labelIcon.sprite.sprite-product_sun
               .product__labelTitle Летняя
             li.product__label
-              img.product__labelIcon(src='./images/product/car.png')
+              .product__labelIcon.sprite.sprite-product_car
               .product__labelTitle Легковая
             li.product__label
-              img.product__labelIcon(src='./images/product/new.png')
+              .product__labelIcon.sprite.sprite-product_new
               .product__labelTitle Новая
           img.product__picture(src='./images/product1.jpg')
         .product__actions
@@ -41,16 +41,16 @@
           .product__priceOld 1 250
             span &nbsp;грн.
         button.button.product__buy
-          img(src='./images/product/basket.png')
+          .sprite.sprite-product_addtobasket
           span Купить товар
         ul.product__using
           li.product__usingItem
             a(href='#')
-              img(src='./images/product/compare_product.png')
+              .sprite.sprite-product_compare
               span Сравнить товар
           li.product__usingItem
             a(href='#')
-              img(src='./images/product/addproduct_tofavorite.png')
+              .sprite.sprite-product_addtofavorite
               span В избранное
       .col-sm-6.col-lg-4.col-xl-3.product
         a.product__mark(href='#') Mark
