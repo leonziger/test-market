@@ -118,7 +118,7 @@ gulp.task('clean', function () {
 
 gulp.task('build', gulp.series(
   'clean',
-  //'svgSymbols',
+  'svgSymbols',
   gulp.parallel(
     'views',
     'styles',

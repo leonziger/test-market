@@ -61,18 +61,18 @@
       background: url('../images/product/star_rated_off.png');
     }
 
+    span.ratedOn{
+      background: url('../images/product/star_rated_on.png');
+    }
+
     &-icon{
       font-size: 13px;
       margin-right: 5px;
       color: #a4a4a4;
 
-      &.rated{
+      &_rated{
         color: #ff8600;
       }
-    }
-
-    span.ratedOn{
-      background: url('../images/product/star_rated_on.png');
     }
   }
 

@@ -23,6 +23,7 @@
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 2px solid #606a76;
+    transition: .2s;
 
     &:hover {
       cursor: pointer;
@@ -62,6 +63,7 @@
 
   &__icon{
     fill: #a0a6ad;
+    transition: .2s;
 
     &_car{
       width: 40px;

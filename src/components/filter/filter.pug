@@ -1,29 +1,27 @@
+include ../icon/icon
+
+
 .filter
   ul.filter__tabs
     li.filter__tab
       a.filter__link.filter__link_active
-        svg.filter__icon.filter__icon_car
-          use(xlink:href='#tab_icon1')
+        +icon({icon:'car', className:'filter__icon filter__icon_car'})
         .filter__title Ссылка 1
     li.filter__tab
       a.filter__link
-        svg.filter__icon.filter__icon_truck
-          use(xlink:href='#tab_icon2')
+        +icon({icon:'truck', className:'filter__icon filter__icon_truck'})
         .filter__title Ссылка 2
     li.filter__tab
       a.filter__link
-        svg.filter__icon.filter__icon_wheel
-          use(xlink:href='#tab_icon3')
+        +icon({icon:'wheel', className:'filter__icon filter__icon_wheel'})
         .filter__title Ссылка 3
     li.filter__tab
       a.filter__link
-        svg.filter__icon.filter__icon_oil
-          use(xlink:href='#tab_icon4')
+        +icon({icon:'oil', className:'filter__icon filter__icon_oil'})
         .filter__title Ссылка 4
     li.filter__tab
       a.filter__link
-        svg.filter__icon.filter__icon_battery
-          use(xlink:href='#tab_icon5')
+        +icon({icon:'battery', className:'filter__icon filter__icon_battery'})
         .filter__title Ссылка 5
 
   ul.filter__blocks
