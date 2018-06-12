@@ -7,16 +7,17 @@
       .col-12.col-sm-6.products__catlink
         a Ссылка в каталог
     .row.products__list
+      // Product1
       .col-sm-6.col-lg-4.col-xl-3.product
         a.product__mark(href='#') Mark
         a.product__title(href='#') Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
         .product__info
           .product__rating
-            span.ratedOn
-            span.ratedOn
-            span.ratedOn
-            span.ratedOn
-            span.ratedOn
+            i.fas.fa-star.product__rating-icon.rated
+            i.fas.fa-star.product__rating-icon.rated
+            i.fas.fa-star.product__rating-icon
+            i.fas.fa-star.product__rating-icon
+            i.fas.fa-star.product__rating-icon
           a.product__comments(href='#') Отзывы (10)
           .product__quantity В наличии: 24 шт.
         .product__preview
@@ -52,6 +53,7 @@
             a(href='#')
               .sprite.sprite-product_addtofavorite
               span В избранное
+      // Product 2
       .col-sm-6.col-lg-4.col-xl-3.product
         a.product__mark(href='#') Mark
         a.product__title(href='#') Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
@@ -70,16 +72,12 @@
               img.product__labelIcon(src='./images/product/sun.png')
               .product__labelTitle Летняя
             li.product__label
-              img.product__labelIcon(src='./images/product/car.png')
-              .product__labelTitle Легковая
-            li.product__label
               img.product__labelIcon(src='./images/product/new.png')
               .product__labelTitle Новая
           img.product__picture(src='./images/product2.jpg')
         .product__actions
           .product__action.product__action_new Новинка
           .product__action.product__action_hit Хит
-          .product__action.product__action_discont Скидка
         .product__price
           .product__priceNew 599
             span &nbsp;грн.
@@ -97,6 +95,7 @@
             a(href='#')
               img(src='./images/product/addproduct_tofavorite.png')
               span В избранное
+      // Product 3
       .col-sm-6.col-lg-4.col-xl-3.product
         a.product__mark(href='#') Mark
         a.product__title(href='#') Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
@@ -107,7 +106,7 @@
             span.ratedOn
             span.ratedOn
             span.ratedOn
-          a.product__comments(href='#') Отзывы (10)
+          a.product__comments(href='#') Без отзывов
           .product__quantity В наличии: 24 шт.
         .product__preview
           ul.product__labels
@@ -123,12 +122,10 @@
           img.product__picture(src='./images/product3.jpg')
         .product__actions
           .product__action.product__action_new Новинка
-          .product__action.product__action_hit Хит
-          .product__action.product__action_discont Скидка
         .product__price
-          .product__priceNew 599
+          .product__priceNew 9 570
             span &nbsp;грн.
-          .product__priceOld 1 250
+          .product__priceOld 11 250
             span &nbsp;грн.
         button.button.product__buy
           img(src='./images/product/basket.png')
@@ -142,6 +139,7 @@
             a(href='#')
               img(src='./images/product/addproduct_tofavorite.png')
               span В избранное
+      // Product 4
       .col-sm-6.col-lg-4.col-xl-3.product
         a.product__mark(href='#') Mark
         a.product__title(href='#') Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany
@@ -162,18 +160,10 @@
             li.product__label
               img.product__labelIcon(src='./images/product/car.png')
               .product__labelTitle Легковая
-            li.product__label
-              img.product__labelIcon(src='./images/product/new.png')
-              .product__labelTitle Новая
           img.product__picture(src='./images/product4.jpg')
         .product__actions
-          .product__action.product__action_new Новинка
-          .product__action.product__action_hit Хит
-          .product__action.product__action_discont Скидка
         .product__price
           .product__priceNew 599
-            span &nbsp;грн.
-          .product__priceOld 1 250
             span &nbsp;грн.
         button.button.product__buy
           img(src='./images/product/basket.png')
@@ -187,4 +177,3 @@
             a(href='#')
               img(src='./images/product/addproduct_tofavorite.png')
               span В избранное
-
