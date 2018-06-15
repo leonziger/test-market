@@ -120,7 +120,7 @@ gulp.task('sprite', function() {
   const spriteData = gulp.src('./src/assets/images/sprite/*.png')
     .pipe(spritesmith({
       imgName: 'sprite.png',
-      cssName: 'sprite.scss',
+      cssName: 'spritecolletion.scss',
       algorithm: 'binary-tree',
       padding: 2,
       cssTemplate: './src/components/sprite/sprite-template.mustache'
