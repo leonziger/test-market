@@ -1,0 +1,162 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-action_green {
+  background-image: url(sprite.png);
+  background-position: 0px -111px;
+  width: 74px;
+  height: 26px;
+}
+.icon-action_red {
+  background-image: url(sprite.png);
+  background-position: 0px -137px;
+  width: 74px;
+  height: 26px;
+}
+.icon-action_violet {
+  background-image: url(sprite.png);
+  background-position: -74px -111px;
+  width: 74px;
+  height: 26px;
+}
+.icon-addproduct_tofavorite {
+  background-image: url(sprite.png);
+  background-position: -195px -129px;
+  width: 30px;
+  height: 29px;
+}
+.icon-arrow {
+  background-image: url(sprite.png);
+  background-position: -225px -129px;
+  width: 8px;
+  height: 14px;
+}
+.icon-basket {
+  background-image: url(sprite.png);
+  background-position: -148px -111px;
+  width: 28px;
+  height: 24px;
+}
+.icon-car {
+  background-image: url(sprite.png);
+  background-position: -74px -137px;
+  width: 53px;
+  height: 26px;
+}
+.icon-compare_product {
+  background-image: url(sprite.png);
+  background-position: -195px -103px;
+  width: 34px;
+  height: 26px;
+}
+.icon-ico_basket {
+  background-image: url(sprite.png);
+  background-position: 0px -163px;
+  width: 40px;
+  height: 35px;
+}
+.icon-ico_basket_quantity {
+  background-image: url(sprite.png);
+  background-position: -195px -71px;
+  width: 34px;
+  height: 32px;
+}
+.icon-ico_compare {
+  background-image: url(sprite.png);
+  background-position: -131px -74px;
+  width: 45px;
+  height: 34px;
+}
+.icon-ico_entrance {
+  background-image: url(sprite.png);
+  background-position: -176px -74px;
+  width: 16px;
+  height: 15px;
+}
+.icon-ico_favorite {
+  background-image: url(sprite.png);
+  background-position: -195px -38px;
+  width: 34px;
+  height: 33px;
+}
+.icon-ico_phone {
+  background-image: url(sprite.png);
+  background-position: -175px -137px;
+  width: 12px;
+  height: 17px;
+}
+.icon-ico_reset_form {
+  background-image: url(sprite.png);
+  background-position: -82px -163px;
+  width: 13px;
+  height: 13px;
+}
+.icon-logo_bottom {
+  background-image: url(sprite.png);
+  background-position: 0px -37px;
+  width: 195px;
+  height: 37px;
+}
+.icon-logo_top {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 195px;
+  height: 37px;
+}
+.icon-logo_top_mobi {
+  background-image: url(sprite.png);
+  background-position: 0px -74px;
+  width: 131px;
+  height: 37px;
+}
+.icon-logo_w {
+  background-image: url(sprite.png);
+  background-position: -40px -163px;
+  width: 42px;
+  height: 15px;
+}
+.icon-new {
+  background-image: url(sprite.png);
+  background-position: -127px -137px;
+  width: 48px;
+  height: 25px;
+}
+.icon-red_arrow {
+  background-image: url(sprite.png);
+  background-position: -195px -158px;
+  width: 15px;
+  height: 3px;
+}
+.icon-star_rated_off {
+  background-image: url(sprite.png);
+  background-position: -176px -89px;
+  width: 15px;
+  height: 14px;
+}
+.icon-star_rated_on {
+  background-image: url(sprite.png);
+  background-position: -176px -111px;
+  width: 15px;
+  height: 14px;
+}
+.icon-sun {
+  background-image: url(sprite.png);
+  background-position: -195px 0px;
+  width: 38px;
+  height: 38px;
+}

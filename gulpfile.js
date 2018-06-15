@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const buffer = require('vinyl-buffer');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const csso = require('gulp-csso');
@@ -17,7 +18,6 @@ const tinypng = require('gulp-tinypng-nokey');
 const bro = require('gulp-bro');
 const babelify = require('babelify');
 const uglify = require('gulp-uglify');
-
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 
@@ -68,7 +68,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src(['./src/assets/images/**/*.*', '!./src/images/sprite/*.*'])
+  return gulp.src(['./src/assets/images/**/*.*', '!./src/assests/images/sprite/*.*'])
     .pipe(gulpIf(!isDevelopment, tinypng()))
     .pipe(gulp.dest('./public/images'));
 });
@@ -116,8 +116,29 @@ gulp.task('clean', function () {
   return del('./public')
 });
 
+gulp.task('sprite', function() {
+  const spriteData = gulp.src('./src/assets/images/sprite/*.png')
+    .pipe(spritesmith({
+      imgName: 'sprite.png',
+      cssName: 'sprite.scss',
+      algorithm: 'binary-tree',
+      padding: 2,
+      cssTemplate: './src/components/sprite/sprite-template.mustache'
+    }));
+
+  spriteData.img
+    .pipe(buffer())
+    .pipe(gulpIf(!isDevelopment, tinypng()))
+    .pipe(gulp.dest('./public/images'));
+
+  spriteData.css.pipe(gulp.dest('./src/components/sprite'));
+
+  return spriteData;
+});
+
 gulp.task('build', gulp.series(
   'clean',
+  'sprite',
   'svgSymbols',
   gulp.parallel(
     'views',

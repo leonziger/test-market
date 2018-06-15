@@ -1,3 +1,5 @@
+@import "../../sprite/sprite";
+
 .product{
   display: block;
   border-right: 1px solid #dbdbdb;
@@ -117,6 +119,10 @@
 
   &__labelIcon{
     max-height: 40px;
+
+    &_sun{
+      @include sprite('product_sun');
+    }
   }
 
   &__labelTitle{
