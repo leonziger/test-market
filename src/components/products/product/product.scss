@@ -124,6 +124,14 @@
     &_sun{
       @include sprite('product_sun');
     }
+
+    &_car{
+      @include sprite('product_car');
+    }
+
+    &_new{
+      @include sprite('product_new');
+    }
   }
 
   &__labelTitle{
@@ -202,7 +210,7 @@
     margin-right: 10px;
 
     &_new{
-      background: url('../images/product/action_green.png');
+      @include sprite('action_green');
       box-shadow: 0 5px 12px rgba(46, 182, 142, 0.5);
     }
 
