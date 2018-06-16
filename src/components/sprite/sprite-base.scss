@@ -5,7 +5,7 @@
   @include spriteBase();
 
   @each $imageName, $imageProps in $images {
-    &_#{$imageName} {
+    &__#{$imageName} {
       @include spritePosition($imageName);
       @include spriteSize($imageName);
     }

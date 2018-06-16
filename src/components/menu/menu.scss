@@ -114,26 +114,27 @@
    border-bottom: 1px solid #f1f1f1;
    position: relative;
 
-a{
-  display: inline-block;
-  font-size: 16px;
-  line-height: 1;
-  color:#3b3b3b;
-  text-transform: uppercase;
-  text-decoration: none;
+  a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    color:#3b3b3b;
+    text-transform: uppercase;
+    text-decoration: none;
 
-&:after{
-   content: url('../images/arrow.png');
-   display: inline-block;
-   padding-top: 2px;
-   position: absolute;
-   right: 36px;
-   bottom: 16px;
- }
-}
+    &:after{
+      content: url('../images/menu_arrow.png');
+      display: inline-block;
+      padding-top: 2px;
+      position: absolute;
+      right: 36px;
+      bottom: 16px;
+     }
+  }
 
-&:hover{
-   background-color: #ccc;
- }
-}
+  &:hover{
+    background-color: #ccc;
+    cursor: pointer;
+   }
+  }
 }

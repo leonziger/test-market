@@ -60,13 +60,6 @@
       height: 14px;
       margin-right: 5px;
     }
-    span.ratedOff{
-      background: url('../images/product/star_rated_off.png');
-    }
-
-    span.ratedOn{
-      background: url('../images/product/star_rated_on.png');
-    }
 
     &-icon{
       font-size: 13px;
@@ -120,18 +113,6 @@
 
   &__labelIcon{
     max-height: 40px;
-
-    &_sun{
-      @include sprite('product_sun');
-    }
-
-    &_car{
-      @include sprite('product_car');
-    }
-
-    &_new{
-      @include sprite('product_new');
-    }
   }
 
   &__labelTitle{
@@ -208,25 +189,6 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-right: 10px;
-
-    &_new{
-      box-shadow: 0 5px 12px rgba(46, 182, 142, 0.5);
-      @include sprite('action_green');
-      display: flex;
-    }
-
-    &_hit{
-      box-shadow: 0 5px 12px rgba(98, 28, 148, 0.5);
-      @include sprite('action_violet');
-      display: flex;
-    }
-
-    &_discont{
-      box-shadow: 0 5px 12px rgba(189, 17, 41, 0.5);
-      @include sprite('action_red');
-      display: flex;
-    }
-
   }
 
 
@@ -247,11 +209,6 @@
     &:hover{
       opacity: 1;
     }
-
-    &_addtobasket{
-      @include sprite('product_addtobasket');
-      display: inline-flex;
-    }
   }
 
   &__using{
@@ -270,22 +227,12 @@
       font-weight: 400;
 
       span{
-        margin-left: 10px;
+        padding-left: 10px;
       }
 
       &:hover{
         text-decoration: none;
       }
-    }
-
-    &_compare{
-      @include sprite('product_compare');
-      display: inline-flex;
-    }
-
-    &_addtofavorite{
-      @include sprite('product_addtofavorite');
-      display: inline-flex;
     }
   }
 

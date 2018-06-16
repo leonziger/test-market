@@ -15,14 +15,14 @@
           include ../menu/menu
         ul.main-header__actions
           li.main-header__actions-item
-            img(src='./images/ico_compare.png', alt='')
+            .sprite.sprite__ico_compare
             span Сравнение
           li.main-header__actions-item
-            img(src='./images/ico_favorite.png', alt='')
+            .sprite.sprite__ico_favorite
             span Избранное
-          li.main-header__actions-item.main-header__actions-item_cart
-            img.quantity(src='./images/ico_basket_quantity.png', alt='')
-            img(src='./images/ico_basket.png', alt='')
+          li.main-header__actions-item
+            .sprite.sprite__ico_basket_quantity
+            .sprite.sprite__ico_basket
             span Корзина
     include ../search/search
     include ../filter/filter

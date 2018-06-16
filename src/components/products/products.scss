@@ -50,12 +50,14 @@
       text-decoration: underline;
 
       &:after{
-        content: url('../images/red_arrow.png');
+        content: url('../images/catlink_arrow.png');
         margin-left: 10px;
+        display: inline-block;
       }
 
       &:hover{
         color: #ffc925;
+        cursor: pointer;
       }
 
     }

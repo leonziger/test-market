@@ -88,10 +88,9 @@
     color: #fff;
     text-transform: uppercase;
 
-    &:before{
+    .sprite__ico_entrance{
       margin-top: -1px;
       margin-right: 8px;
-      content:url(../images/ico_entrance.png);
     }
 
     @media(max-width: 540px){
@@ -124,14 +123,7 @@
       }
 
 
-      img.quantity{
-        display: block;
-        position: absolute;
-        top: -27px;
-        left: 8px;
-      }
-
-      img {
+      .sprite {
         display: block;
         position: absolute;
         left: 0;
@@ -139,6 +131,13 @@
         top: 0;
         bottom: 0;
         margin: 0 auto;
+
+        &__ico_basket_quantity{
+          display: block;
+          position: absolute;
+          top: -27px;
+          left: 8px;
+        }
       }
 
       span {
