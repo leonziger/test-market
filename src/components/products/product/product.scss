@@ -210,18 +210,21 @@
     margin-right: 10px;
 
     &_new{
-      @include sprite('action_green');
       box-shadow: 0 5px 12px rgba(46, 182, 142, 0.5);
+      @include sprite('action_green');
+      display: flex;
     }
 
     &_hit{
-      background: url('../images/product/action_violet.png');
       box-shadow: 0 5px 12px rgba(98, 28, 148, 0.5);
+      @include sprite('action_violet');
+      display: flex;
     }
 
     &_discont{
-      background: url('../images/product/action_red.png');
       box-shadow: 0 5px 12px rgba(189, 17, 41, 0.5);
+      @include sprite('action_red');
+      display: flex;
     }
 
   }
@@ -243,6 +246,11 @@
 
     &:hover{
       opacity: 1;
+    }
+
+    &_addtobasket{
+      @include sprite('product_addtobasket');
+      display: inline-flex;
     }
   }
 
@@ -268,6 +276,16 @@
       &:hover{
         text-decoration: none;
       }
+    }
+
+    &_compare{
+      @include sprite('product_compare');
+      display: inline-flex;
+    }
+
+    &_addtofavorite{
+      @include sprite('product_addtofavorite');
+      display: inline-flex;
     }
   }
 
