@@ -129,7 +129,7 @@
   }
 }
 
-.wezom {
+.developer {
   display: flex;
   justify-content: flex-end;
   margin-top: 23px;
@@ -139,11 +139,12 @@
   }
 
   &__logo {
+    //width: 42px;
+    //height: 15px;
+    @include sprite('logo_develop');
     margin-top: 22px;
-    display: block;
     margin-right: 19px;
-    width: 42px;
-    height: 15px;
+    display: block;
   }
   &__content {
     display: flex;
