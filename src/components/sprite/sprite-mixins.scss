@@ -8,21 +8,31 @@
   background-image: url(../images/sprite.png);
 }
 
-@mixin spritePosition($imageName) {
+@function getImagePropsByImageName($imageName) {
   $imageProps: map-get($images, $imageName);
+
+  @if ($imageProps) {
+    @return map-get($images, $imageName);
+  }
+
+  @error "Image with name #{$imageName} is not exist!";
+}
+
+@mixin spritePosition($imageName) {
+  $imageProps: getImagePropsByImageName($imageName);
 
   background-position: map-get($imageProps, x) map-get($imageProps, y);
 }
 
 @mixin spriteSize($imageName) {
-  $imageProps: map-get($images, $imageName);
+  $imageProps: getImagePropsByImageName($imageName);
 
   width: map-get($imageProps, width);
   height: map-get($imageProps, height);
 }
 
 @mixin sprite($imageName) {
-  $imageProps: map-get($images, $imageName);
+  $imageProps: getImagePropsByImageName($imageName);
 
   @include spriteBase();
   @include spritePosition($imageName);
