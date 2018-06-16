@@ -68,9 +68,29 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src(['./src/assets/images/**/*.*', '!./src/assests/images/sprite/*.*'])
+  return gulp.src(['./src/assets/images/**/*.*', '!./src/assets/images/sprite/*.*'])
     .pipe(gulpIf(!isDevelopment, tinypng()))
     .pipe(gulp.dest('./public/images'));
+});
+
+gulp.task('sprite', function() {
+  const spriteData = gulp.src('./src/assets/images/sprite/*.png')
+    .pipe(spritesmith({
+      imgName: 'sprite.png',
+      cssName: 'sprite-images.scss',
+      algorithm: 'binary-tree',
+      padding: 2,
+      cssTemplate: './src/components/sprite/sprite-template.mustache'
+    }));
+
+  spriteData.img
+    .pipe(buffer())
+    .pipe(gulpIf(!isDevelopment, tinypng()))
+    .pipe(gulp.dest('./public/images'));
+
+  spriteData.css.pipe(gulp.dest('./src/components/sprite'));
+
+  return spriteData;
 });
 
 gulp.task('svgSymbols', function () {
@@ -99,7 +119,8 @@ gulp.task('watch', function () {
   gulp.watch('./src/**/*.pug', gulp.series('views'));
   gulp.watch('./src/**/*.js', gulp.series('scripts'));
   gulp.watch('./src/**/*.{css,scss}', gulp.series('styles'));
-  gulp.watch('./src/assets/images/**/*.*', gulp.series('images'));
+  gulp.watch(['./src/assets/images/**/*.*', '!./src/assets/images/sprite/*.*'], gulp.series('images'));
+  gulp.watch(['./src/assets/images/sprite/*.*', './src/components/sprite/sprite-template.mustache'], gulp.series('sprite'));
   gulp.watch('./src/assets/images/svg/**/*.svg', gulp.series('svgSymbols'));
 });
 
@@ -114,26 +135,6 @@ gulp.task('serve', function () {
 
 gulp.task('clean', function () {
   return del('./public')
-});
-
-gulp.task('sprite', function() {
-  const spriteData = gulp.src('./src/assets/images/sprite/*.png')
-    .pipe(spritesmith({
-      imgName: 'sprite.png',
-      cssName: 'spritecolletion.scss',
-      algorithm: 'binary-tree',
-      padding: 2,
-      cssTemplate: './src/components/sprite/sprite-template.mustache'
-    }));
-
-  spriteData.img
-    .pipe(buffer())
-    .pipe(gulpIf(!isDevelopment, tinypng()))
-    .pipe(gulp.dest('./public/images'));
-
-  spriteData.css.pipe(gulp.dest('./src/components/sprite'));
-
-  return spriteData;
 });
 
 gulp.task('build', gulp.series(

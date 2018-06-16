@@ -1,0 +1,30 @@
+@import 'sprite-images';
+
+
+@mixin spriteBase() {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url(../images/sprite.png);
+}
+
+@mixin spritePosition($imageName) {
+  $imageProps: map-get($images, $imageName);
+
+  background-position: map-get($imageProps, x) map-get($imageProps, y);
+}
+
+@mixin spriteSize($imageName) {
+  $imageProps: map-get($images, $imageName);
+
+  width: map-get($imageProps, width);
+  height: map-get($imageProps, height);
+}
+
+@mixin sprite($imageName) {
+  $imageProps: map-get($images, $imageName);
+
+  @include spriteBase();
+  @include spritePosition($imageName);
+  @include spriteSize($imageName);
+}
