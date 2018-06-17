@@ -260,8 +260,8 @@
     justify-content: space-between;
   }
 
-  &__usingItem{
-    a{
+  &__usingItem {
+    a {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -276,16 +276,6 @@
       &:hover{
         text-decoration: none;
       }
-    }
-
-    &_compare{
-      @include sprite('product_compare');
-      display: inline-flex;
-    }
-
-    &_addtofavorite{
-      @include sprite('product_addtofavorite');
-      display: inline-flex;
     }
   }
 

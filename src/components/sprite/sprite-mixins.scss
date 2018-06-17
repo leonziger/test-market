@@ -4,6 +4,7 @@
 @mixin spriteBase() {
   content: '';
   display: inline-block;
+  flex-shrink: 0;
   vertical-align: bottom;
   background-image: url(../images/sprite.png);
 }
